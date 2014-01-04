@@ -1,4 +1,4 @@
-/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -197,7 +197,7 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -353,12 +353,19 @@ $padding:;
 $margin:;
 
 */
+/* ==========================================================================
+   GRID
+   ========================================================================== */
+/* Single and responsive column
+   ========================================================================== */
 .single-column {
   margin: 0 auto;
   padding: 1em;
   width: 100%;
-  max-width: 768px!important; }
+  max-width: 768px !important; }
 
+/* Media Query mixin
+   ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100; }
 
@@ -383,7 +390,7 @@ h5, .h5 {
   font-style: italic; }
 
 h6, .h6 {
-  font-size: 12px; }
+  font-size: 16px; }
 
 p {
   font-size: 20px;
@@ -407,7 +414,7 @@ p {
     font-size: 64px; } }
 
 .meta {
-  font-size: 12px; }
+  font-size: 16px; }
 
 .ct {
   text-align: center; }
@@ -444,19 +451,19 @@ date {
 
 .large-list {
   font-size: 20px; }
-  .large-list li {
-    border-top: 1px solid #eeeeee; }
-  .large-list a {
+  .large-list .large-list--item {
+    border-top: 1px solid #eee; }
+  .large-list .large-list--link {
+    color: #222222;
     display: block;
     padding: 1em 0;
-    color: #222222;
     line-height: 1.5;
     text-decoration: none; }
-    .large-list a:hover, .large-list a:active {
+    .large-list .large-list--link:hover, .large-list .large-list--link:active {
       color: #ff5335; }
-      .large-list a:hover .meta, .large-list a:active .meta {
+      .large-list .large-list--link:hover .meta, .large-list .large-list--link:active .meta {
         color: #ff5335; }
-    .large-list a .meta {
+    .large-list .large-list--link .meta {
       display: block; }
 
 .post ul, .post dl {
@@ -475,36 +482,22 @@ date {
 a {
   text-decoration: none; }
 
-nav[role="navigation"] li,
-ul.social li {
+.site-nav--item {
   display: inline-block;
   font-size: 20px; }
-  nav[role="navigation"] li:last-child,
-  ul.social li:last-child {
+  .site-nav--item:last-child {
     border-right: none; }
-  nav[role="navigation"] li a,
-  ul.social li a {
-    font-weight: 100;
-    color: #777777;
-    display: block;
-    padding-right: 1em;
-    text-decoration: none; }
-    nav[role="navigation"] li a:hover, nav[role="navigation"] li a:focus,
-    ul.social li a:hover,
-    ul.social li a:focus {
-      color: #ff5335; }
-    nav[role="navigation"] li a:active,
-    ul.social li a:active {
-      color: #666; }
 
-.horizontal li {
-  display: inline-block; }
-.horizontal li a {
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  background: #eee;
-  outline: 1px solid #e3e3e3;
+.site-nav--link {
+  font-weight: 100;
+  color: #777777;
+  display: block;
+  padding-right: 1em;
   text-decoration: none; }
+  .site-nav--link:hover, .site-nav--link:focus {
+    color: #ff5335; }
+  .site-nav--link:active {
+    color: #666; }
 
 .row {
   padding: 2em 0; }
@@ -832,7 +825,7 @@ code {
   -moz-border-radius: 3px;
   border-radius: 3px;
   display: block;
-  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-family: Consolas,  "Andale Mono WT",  "Andale Mono",  "Lucida Console",  "Lucida Sans Typewriter",  "DejaVu Sans Mono",  "Bitstream Vera Sans Mono",  "Liberation Mono",  "Nimbus Mono L",  Monaco,  "Courier New",  Courier,  monospace;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.1em;
@@ -842,3 +835,24 @@ code {
   @media screen and (min-width: 100px) and (max-width: 479px) {
     code {
       padding: 1em 0.2em; } }
+
+.header-full-bleed {
+  margin: 0;
+  max-height: 500px;
+  min-height: 400px;
+  background-size: cover; }
+  .header-full-bleed h1 {
+    margin-top: 100px; }
+
+.full-bleed-title {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); }
+
+@media screen and (min-width: 100px) and (max-width: 479px) {
+  .full-bleed-title {
+    font-size: 32px; }
+
+  .header-full-bleed {
+    max-height: 300px;
+    min-height: 200px; }
+    .header-full-bleed h1 {
+      margin-top: 40px; } }

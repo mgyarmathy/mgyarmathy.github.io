@@ -1,0 +1,22 @@
+.header-full-bleed {
+  margin:0;
+  max-height:500px;
+  min-height:400px;
+  background-size:cover;
+  h1 {margin-top:100px;}
+}
+
+.full-bleed-title {
+  text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+
+@include breakpoint(one-hand) {
+  .full-bleed-title {
+    font-size:$type-quote;
+  }
+  .header-full-bleed {
+    max-height: 300px;
+    min-height: 200px;
+    h1 {margin-top:40px;}
+  }
+}
