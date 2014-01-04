@@ -2,13 +2,21 @@
 layout: default
 ---
 
-<section class="single-column">
+
+  {% for post in site.posts limit: 1 %}
+    {% if post.header_img %}
+      <header style="background:#eee url({{post.header_img}}) no-repeat center center;" class="header-full-bleed ct row">
+        <h1 style="color:{{post.text_color}};" class="h1 full-bleed-title">{{post.title}}</h1>
+      </header>
+      <section class="single-column">
+    {% else %}
+      <section class="single-column">
+      <h1 class="ct h1">{{ post.title }}</h1>
+    {% endif %}
   <article class="post">
-    {% for post in site.posts limit: 1 %}
-       <h1 class="ct h1">{{ post.title }}</h1>
       {{ post.content }}
-    {% endfor %}
   </article>
+  {% endfor %}
   <section class="mt-4">
     <article>
       <ul class="large-list ct mt-1">
