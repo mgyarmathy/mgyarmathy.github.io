@@ -1,13 +1,13 @@
 # This will be the first part of the title tag for your site <title> site.name + page.title </title>
-name: "JKL"
+name: "Michael Gyarmathy"
 # Populates the meta description for the site. Should be under 150 characters for best SEO purposes.
 descripiton: "Light-weight scaffolding for a Jekyll project"
 
 # Owner (organization or individual) of site content
-author: "mrmrs"
+author: "mgyarmathy"
 
 #url: "[http:// ]"
-url: "http://localhost:4000"
+url: "http://mgyarmathy.github.io"
 
 # Your UA tracking number (i.e 35858753-1) for Google Analytics. 
 # If you comment this out, or don't fill out this parameter - Google analytics won't be included. 
@@ -17,7 +17,7 @@ googleID:
 paginate: 5
 
 # Style of permalinks
-permalink: pretty
+permalink: /:title
 
 # Variable format options for URL styles below
 # pretty                                          => /2009/04/29/slap-chop/index.html
