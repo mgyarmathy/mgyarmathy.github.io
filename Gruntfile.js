@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
 	var base = './_site';
 
-	grunt.initConfig({
+   grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		sass: {
 			dist: {
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('serve', function () {
         grunt.task.run([
-        	'jekyll',
+        	   'jekyll',
             'connect:livereload',
             'watch'
         ]);
