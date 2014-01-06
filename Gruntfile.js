@@ -18,8 +18,8 @@ module.exports = function(grunt) {
 		jekyll: {
 			dist: {
       			options: {
-        			dest: '<%= dist %>',
-        			config: '_config.yml'
+                  dest: '<%= dist %>',
+                  config: '_config.yml'
       			}
       		}
 		},
@@ -38,7 +38,11 @@ module.exports = function(grunt) {
 		},
 		watch: {
 			html: {
-				files: ['_posts/*.html'],
+				files: [
+               '_posts/*.html',
+               '_layouts/*.html',
+               '_includes/*.html'
+            ],
 				tasks: ['jekyll'],
 				options: {
 					livereload: true
