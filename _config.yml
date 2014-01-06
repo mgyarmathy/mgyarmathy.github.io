@@ -27,4 +27,4 @@ permalink: /:title
 # UnComment once you have pygments installed. Used for code syntax highlighting.
 #pygments: true
 
-exclude: [Rakefile]
+exclude: [Rakefile, node_modules, Gruntfile.js, package.json]
