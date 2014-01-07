@@ -863,8 +863,8 @@ code {
   .full-bleed-title {
     font-size: 32px; }
 
-  .header-full-bleed {
-    max-height: 300px;
-    min-height: 200px; }
-    .header-full-bleed h1 {
-      margin-top: 40px; } }
+  .full-bleed-subtitle {
+    font-size: 20px; }
+
+  .header-full-bleed h1 {
+    margin-top: 40px; } }

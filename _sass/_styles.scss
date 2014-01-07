@@ -21,11 +21,12 @@
 
 @include breakpoint(one-hand) {
   .full-bleed-title {
-    font-size:$type-quote;
+    font-size:$type-3;
+  }
+  .full-bleed-subtitle {
+    font-size:$type-4;
   }
   .header-full-bleed {
-    max-height: 300px;
-    min-height: 200px;
     h1 {margin-top:40px;}
   }
 }
