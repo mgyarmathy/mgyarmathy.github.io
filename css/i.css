@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,300);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,700);
 @import url(http://fonts.googleapis.com/css?family=Crimson+Text);
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -369,14 +370,17 @@ $margin:;
 /* Media Query mixin
    ========================================================================== */
 * {
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  font-family: 'Crimson Text', serif; }
+  color: #2e2e2e; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
-  font-family: 'Titillium Web', sans-serif; }
+h1, h2 {
+  font-weight: 600; }
 
-h1, .h2, .h3, .h4, .h5, .h6 {
+h3, h4, h5, h6 {
+  font-weight: 400; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: .25em; }
 
 h1, .h1 {
@@ -389,18 +393,18 @@ h3, .h3 {
   font-size: 32px; }
 
 h4, .h4 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 900; }
 
 h5, .h5 {
-  font-size: 20px;
+  font-size: 24px;
   font-style: italic; }
 
 h6, .h6 {
   font-size: 16px; }
 
 p {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.5; }
   p + p {
     margin-top: 1em; }
@@ -435,7 +439,7 @@ blockquote {
   blockquote p {
     font-size: 32px; }
   blockquote footer, blockquote footer a {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 2;
     text-decoration: none;
     color: #999; }
@@ -457,7 +461,7 @@ date {
   border-bottom: 1px dotted #eeeeee; }
 
 .large-list {
-  font-size: 20px; }
+  font-size: 24px; }
   .large-list .large-list--item {
     border-top: 1px solid #eee; }
   .large-list .large-list--link {
@@ -475,7 +479,7 @@ date {
 
 .post ul, .post dl {
   line-height: 1.618;
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 1em; }
 .post dt {
   font-weight: bold; }
@@ -491,7 +495,7 @@ a {
 
 .site-nav--item {
   display: inline-block;
-  font-size: 20px; }
+  font-size: 24px; }
   .site-nav--item:last-child {
     border-right: none; }
 
@@ -847,24 +851,28 @@ code {
   margin: 0;
   background-size: cover; }
   .header-full-bleed .full-bleed-title {
+    display: inline-block;
     background: #fff;
     padding: 1% 2%;
     margin: 0 2% 5% 5%;
     max-width: 65%;
-    line-height: 100%; }
+    line-height: 95%;
+    text-transform: uppercase;
+    letter-spacing: 7px; }
   .header-full-bleed .full-bleed-subtitle {
-    background: #fff;
+    display: inline-block;
     padding: 0 2% 0;
     margin: 0 5% 5% 5%;
-    display: inline-block;
-    max-width: 80%; }
+    max-width: 80%;
+    background: #fff; }
 
 @media screen and (min-width: 100px) and (max-width: 479px) {
   .full-bleed-title {
-    font-size: 32px; }
+    font-size: 32px;
+    min-width: 90%; }
 
   .full-bleed-subtitle {
-    font-size: 20px; }
+    font-size: 24px; }
 
   .header-full-bleed h1 {
     margin-top: 40px; } }
