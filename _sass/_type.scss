@@ -1,7 +1,14 @@
+
 // The internet is run on paragraphs and links. Let people see them please.
 
+* {
+  font-weight: 400;
+  font-family: 'Crimson Text', serif;
+}
+
 h1,h2,h3,h4,h5,h6 {
-  font-weight:100;
+  font-weight:300;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 // I mean it's not that big.

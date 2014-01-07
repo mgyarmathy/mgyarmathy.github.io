@@ -1,14 +1,22 @@
 .header-full-bleed {
   margin:0;
-  max-height:500px;
-  min-height:400px;
   background-size:cover;
-  text-align: center;
-  h1 {margin-top:100px;}
-}
 
-.full-bleed-title {
-  text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+  .full-bleed-title {
+    background: #fff;
+    padding: 1% 2%;
+    margin: 0 2% 5% 5%;
+    max-width: 65%;
+    line-height: 100%;
+  }
+
+  .full-bleed-subtitle {
+    background: #fff;
+    padding: 0 2% 0;
+    margin: 0 5% 5% 5%;
+    display: inline-block;
+    max-width: 80%;
+  }
 }
 
 @include breakpoint(one-hand) {
