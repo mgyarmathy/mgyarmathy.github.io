@@ -3,7 +3,7 @@ layout: full_bleed_header
 title: "He Set His Face Like Flint"
 author: Michael Gyarmathy
 
-header_img: "{{ site.url }}/img/Jesus_Goes_Up_To_Jerusalem_James_Tissot.jpg"
+header_img: "/img/Jesus_Goes_Up_To_Jerusalem_James_Tissot.jpg"
 ---
 
 *He set His face like flint.*
