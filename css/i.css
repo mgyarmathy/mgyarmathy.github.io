@@ -471,10 +471,12 @@ date {
     padding: 1em 0;
     line-height: 1.5;
     text-decoration: none; }
-    .large-list .large-list--link:hover, .large-list .large-list--link:active {
-      color: #ff5335; }
-      .large-list .large-list--link:hover .meta, .large-list .large-list--link:active .meta {
-        color: #ff5335; }
+    .large-list .large-list--link:hover, .large-list .large-list--link:focus {
+      color: #003399; }
+      .large-list .large-list--link:hover .meta, .large-list .large-list--link:focus .meta {
+        color: #003399; }
+    .large-list .large-list--link:active {
+      color: #3366cc; }
     .large-list .large-list--link .meta {
       display: block; }
 
@@ -493,6 +495,13 @@ date {
 
 a {
   text-decoration: none; }
+  a:hover, a:focus {
+    color: #003399; }
+  a:active {
+    color: #3366cc; }
+
+.highlight {
+  color: #003399; }
 
 .site-nav {
   padding: 0;
@@ -519,9 +528,9 @@ a {
   text-decoration: none;
   text-transform: uppercase; }
   .site-nav--link:hover, .site-nav--link:focus {
-    color: #ff5335; }
+    color: #003399; }
   .site-nav--link:active {
-    color: #666; }
+    color: #3366cc; }
 
 .row {
   padding: 2em 0; }

@@ -1,3 +1,15 @@
 a {
   text-decoration:none;
+
+   &:hover,
+   &:focus {
+      color:$blue-dark;
+   }
+   &:active {
+      color:$blue-medium;
+   }
+}
+
+.highlight {
+   color:$blue-dark;
 }

@@ -29,9 +29,9 @@
   text-transform: uppercase;
   &:hover,
   &:focus {
-    color:$orange;
+    color:$blue-dark;
   }
   &:active {
-    color: #666;
+    color:$blue-medium;
   }
 }
