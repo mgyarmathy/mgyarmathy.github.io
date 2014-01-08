@@ -105,7 +105,8 @@ blockquote {
     font-size:$type-4;
     line-height:2;
     text-decoration:none;
-    color:#999;
+    color:#999 !important;
+    text-align:right;
   }
 }
 
