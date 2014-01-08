@@ -2,8 +2,11 @@
 <body>
   <header style="background:#eee url({{page.header_img}}) no-repeat center center; background-size:cover;" class="header-full-bleed row">  
       <h1 class="h1 full-bleed-title">{{page.title}}</h1>
-      {% if page.subtitle %}
-      <h3 class="h3 full-bleed-subtitle">{{page.subtitle}}</h3>
+      {% if page.author %}
+      <div class="full-bleed-subtitle">
+        <p><time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time></p>
+        <p>By: {{page.author}}</p>
+      </div>
       {% endif %}
     </header>
   <article class="mt-2 post single-column">
