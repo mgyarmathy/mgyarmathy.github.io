@@ -1,17 +1,32 @@
+.site-nav {
+  padding: 0;
+  text-align:right;
+
+  @include breakpoint(one-hand) {
+    text-align: center;
+  }
+}
+
+.site-nav--list {
+  margin: 3px 0;
+}
+
 .site-nav--item {
   display:inline-block;
-  font-size:$type-4;
+  font-size:$type-5;
   &:last-child {
     border-right: none;
   }
 }
 
 .site-nav--link {
-  font-weight:100;
+  font-weight:400;
+  letter-spacing: 2px;
   color:$grey-medium;
   display:block;
   padding-right:1em;
   text-decoration: none;
+  text-transform: uppercase;
   &:hover,
   &:focus {
     color:$orange;

@@ -494,18 +494,30 @@ date {
 a {
   text-decoration: none; }
 
+.site-nav {
+  padding: 0;
+  text-align: right; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .site-nav {
+      text-align: center; } }
+
+.site-nav--list {
+  margin: 3px 0; }
+
 .site-nav--item {
   display: inline-block;
-  font-size: 24px; }
+  font-size: 16px; }
   .site-nav--item:last-child {
     border-right: none; }
 
 .site-nav--link {
-  font-weight: 100;
+  font-weight: 400;
+  letter-spacing: 2px;
   color: #777777;
   display: block;
   padding-right: 1em;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase; }
   .site-nav--link:hover, .site-nav--link:focus {
     color: #ff5335; }
   .site-nav--link:active {
