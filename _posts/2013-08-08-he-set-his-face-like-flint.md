@@ -3,8 +3,7 @@ layout: full_bleed_header
 title: "He Set His Face Like Flint"
 author: Michael Gyarmathy
 
-header_img: "http://upload.wikimedia.org/wikipedia/commons/2/20/Brooklyn_Museum_-_With_Passover_Approaching,_Jesus_Goes_Up_to_Jerusalem_-_James_Tissot_-_overall.jpg"
-text_color: "#fff"
+header_img: "{{ site.url }}/img/Jesus_Goes_Up_To_Jerusalem_James_Tissot.jpg"
 ---
 
 *He set His face like flint.*
