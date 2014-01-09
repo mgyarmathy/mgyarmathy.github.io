@@ -62,6 +62,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('serve', function () {
         grunt.task.run([
+            'sass',
         	   'jekyll',
             'connect:livereload',
             'watch'

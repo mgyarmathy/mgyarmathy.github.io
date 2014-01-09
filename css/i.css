@@ -865,6 +865,9 @@ code {
     code {
       padding: 1em 0.2em; } }
 
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
 .header-full-bleed {
   margin: 0;
   background-size: cover; }
