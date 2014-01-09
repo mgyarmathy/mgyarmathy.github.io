@@ -2,32 +2,12 @@
 layout: default
 ---
 
-  {% for post in site.posts limit: 1 %}
+  {% for post in site.posts %}
     {% if post.header_img %}
+    <a href="{{post.url}}">
       <header style="background:#eee url({{post.header_img}}) no-repeat center center; background-size: cover;" class="header-full-bleed row">
         <h1 class="h1 full-bleed-title">{{post.title}}</h1>
       </header>
-      <section class="single-column">
-    {% else %}
-      <section class="single-column">
-      <h1 class="ct h1">{{ post.title }}</h1>
+    </a>
     {% endif %}
   {% endfor %}
-  <section class="mt-4">
-    <article>
-      <ul class="large-list ct mt-1">
-        {% for post in paginator.posts %}
-          <li class="large-list--item">
-            <a href="{{ post.url }}" title="{{post.title}}" class="large-list--link">
-              <date datetime="{{post.date}}" class="meta">
-                {{ post.date | date_to_long_string }}
-              </date>
-              {{ post.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-      <p class="ct"><a href="{{site.url}}/archives/" class="ct" title="Archives">...</a></p>
-    </article>
-  </section>
-</section>

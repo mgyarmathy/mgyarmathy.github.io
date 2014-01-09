@@ -39,6 +39,7 @@ module.exports = function(grunt) {
 		watch: {
 			html: {
 				files: [
+               'index.html',
                '_posts/*.html',
                '_posts/*.md',
                '_layouts/*.html',

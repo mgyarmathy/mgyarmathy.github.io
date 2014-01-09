@@ -466,17 +466,11 @@ date {
   .large-list .large-list--item {
     border-top: 1px solid #eee; }
   .large-list .large-list--link {
-    color: #222222;
+    color: #2e2e2e;
     display: block;
     padding: 1em 0;
     line-height: 1.5;
     text-decoration: none; }
-    .large-list .large-list--link:hover, .large-list .large-list--link:focus {
-      color: #003399; }
-      .large-list .large-list--link:hover .meta, .large-list .large-list--link:focus .meta {
-        color: #003399; }
-    .large-list .large-list--link:active {
-      color: #3366cc; }
     .large-list .large-list--link .meta {
       display: block; }
 
@@ -495,10 +489,13 @@ date {
 
 a {
   text-decoration: none; }
-  a:hover, a:focus {
+
+.link-hover-blue:hover, .large-list .large-list--link:hover, .site-nav--link:hover, .link-hover-blue:focus, .large-list .large-list--link:focus, .site-nav--link:focus {
+  color: #003399; }
+  .link-hover-blue:hover .meta, .large-list .large-list--link:hover .meta, .site-nav--link:hover .meta, .link-hover-blue:focus .meta, .large-list .large-list--link:focus .meta, .site-nav--link:focus .meta {
     color: #003399; }
-  a:active {
-    color: #3366cc; }
+.link-hover-blue:active, .large-list .large-list--link:active, .site-nav--link:active {
+  color: #3366cc; }
 
 .highlight {
   color: #003399; }
@@ -527,10 +524,6 @@ a {
   padding-right: 1em;
   text-decoration: none;
   text-transform: uppercase; }
-  .site-nav--link:hover, .site-nav--link:focus {
-    color: #003399; }
-  .site-nav--link:active {
-    color: #3366cc; }
 
 .row {
   padding: 2em 0; }

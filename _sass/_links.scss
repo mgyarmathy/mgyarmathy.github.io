@@ -1,9 +1,12 @@
 a {
   text-decoration:none;
+}
 
+.link-hover-blue {
    &:hover,
    &:focus {
       color:$blue-dark;
+      .meta {color:$blue-dark;}
    }
    &:active {
       color:$blue-medium;

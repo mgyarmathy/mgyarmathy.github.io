@@ -27,11 +27,6 @@
   padding-right:1em;
   text-decoration: none;
   text-transform: uppercase;
-  &:hover,
-  &:focus {
-    color:$blue-dark;
-  }
-  &:active {
-    color:$blue-medium;
-  }
+
+  @extend .link-hover-blue;
 }

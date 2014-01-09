@@ -6,19 +6,14 @@
   }
 
   .large-list--link {
-    color:$grey-dark;
+    color:$black;
     display:block;
     padding:1em 0;
     line-height:1.5;
     text-decoration:none;
-    &:hover,
-    &:focus {
-      color:$blue-dark;
-      .meta {color:$blue-dark;}
-    }
-    &:active {
-      color:$blue-medium;
-    }
+
+    @extend .link-hover-blue;
+
     .meta {
       display:block; 
     }
