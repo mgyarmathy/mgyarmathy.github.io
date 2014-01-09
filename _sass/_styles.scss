@@ -24,17 +24,17 @@
     font-size:$type-4;
     letter-spacing: 3px;
   }
-}
 
-@include breakpoint(one-hand) {
-  .full-bleed-title {
-    font-size:$type-3;
-    min-width: 90%;
-  }
-  .full-bleed-subtitle {
-    font-size:$type-4;
-  }
-  .scroll-down {
-    display: none;
+  @include breakpoint(one-hand) {
+    .full-bleed-title {
+      font-size:$type-3;
+      min-width: 90%;
+      padding: 1.5% 4%;
+    }
+
+    .full-bleed-subtitle {
+      padding: 0 4%;
+      max-width: 85%;
+    }
   }
 }

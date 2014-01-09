@@ -887,14 +887,11 @@ code {
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 3px; }
-
-@media screen and (min-width: 100px) and (max-width: 479px) {
-  .full-bleed-title {
-    font-size: 32px;
-    min-width: 90%; }
-
-  .full-bleed-subtitle {
-    font-size: 24px; }
-
-  .scroll-down {
-    display: none; } }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .header-full-bleed .full-bleed-title {
+      font-size: 32px;
+      min-width: 90%;
+      padding: 1.5% 4%; }
+    .header-full-bleed .full-bleed-subtitle {
+      padding: 0 4%;
+      max-width: 85%; } }
