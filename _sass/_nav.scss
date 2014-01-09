@@ -16,6 +16,11 @@
   font-size:$type-5;
   &:last-child {
     border-right: none;
+    @include breakpoint(one-hand) {
+      .site-nav--link {
+        padding-right: 0;
+      }
+    }
   }
 }
 
