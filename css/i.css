@@ -897,3 +897,7 @@ code {
       padding: 1.5% 3.5%; }
     .header-full-bleed .full-bleed-subtitle {
       padding: 0 3.5%; } }
+
+.post hr {
+  width: 30%;
+  margin: 3em auto; }
