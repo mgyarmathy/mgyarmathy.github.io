@@ -23,4 +23,4 @@ For further documentation, refer to the Jekyll and Grunt documentation.
 
 ## Credits
 
-This Jekyll blog uses a modification of the jkl theme by @mrmrs. http://jk-l.cc
+This Jekyll blog uses a heavily-modified version of the jkl theme by @mrmrs. http://jk-l.cc
