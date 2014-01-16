@@ -6,10 +6,14 @@
       {% if page.title %} {{ page.title }} | {% endif %} {{site.author}}
    </title>
    <meta name="author" content="{{site.author}}">
+   {% if page.excerpt %}
+   <meta name="description" content="{{page.excerpt}}">
+   {% else %}
    <meta name="description" content="{{site.description}}">
+   {% endif %}
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="/css/i.css">
    {% if page.header_img %}
-   <link rel="image_src" href="{{page.header_img}}" />
+   <link rel="image_src" href="http://mgyarmathy.github.io{{page.header_img}}"/>
    {% endif %}
 </head>
