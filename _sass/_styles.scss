@@ -28,6 +28,17 @@
     font-size:$type-4;
     letter-spacing: 3px;
   }
+  &.frontpage {
+    min-height: 500px;
+
+    @include breakpoint(one-hand) {
+      min-height: 200px;
+    }
+
+    .full-bleed-title {
+      margin: 3% 2% 3% 5%;
+    }
+  }
 
   @include breakpoint(one-hand) {
     .full-bleed-title {
@@ -45,4 +56,15 @@
 .post hr {
   width: 30%;
   margin: 3em auto;
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity .33s ease-in-out;
+  -moz-transition: opacity .33s ease-in-out;
+  -webkit-transition: opacity .33s ease-in-out;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }

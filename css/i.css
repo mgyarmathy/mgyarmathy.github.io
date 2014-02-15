@@ -890,6 +890,13 @@ code {
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 3px; }
+  .header-full-bleed.frontpage {
+    min-height: 500px; }
+    @media screen and (min-width: 100px) and (max-width: 479px) {
+      .header-full-bleed.frontpage {
+        min-height: 200px; } }
+    .header-full-bleed.frontpage .full-bleed-title {
+      margin: 3% 2% 3% 5%; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .header-full-bleed .full-bleed-title {
       font-size: 32px;
@@ -901,3 +908,11 @@ code {
 .post hr {
   width: 30%;
   margin: 3em auto; }
+
+.fade {
+  opacity: 1;
+  transition: opacity .33s ease-in-out;
+  -moz-transition: opacity .33s ease-in-out;
+  -webkit-transition: opacity .33s ease-in-out; }
+  .fade:hover {
+    opacity: 0.9; }
