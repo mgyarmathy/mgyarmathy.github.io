@@ -2,6 +2,13 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+::selection {
+  background: $grey-light; /* Safari */
+  }
+::-moz-selection {
+  background: $grey-light; /* Firefox */
+}
+
 .header-full-bleed {
   margin:0;
   background-size:cover;
@@ -10,7 +17,7 @@
     display: inline-block;
     background: #fff;
     padding: 1.5% 2%;
-    margin: 0 2% 5% 5%;
+    margin: 3% 2% 5% 5%;
     max-width: 65%;
     line-height: 95%;
     text-transform: uppercase;
@@ -20,7 +27,7 @@
   .full-bleed-subtitle {
     display: inline-block;
     padding: 0 2% 0;
-    margin: 0 5% 5% 5%;
+    margin: 0 5% 3% 5%;
     max-width: 80%;
     background: #fff;
     text-transform: uppercase;
