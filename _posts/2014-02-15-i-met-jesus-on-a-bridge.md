@@ -28,7 +28,7 @@ I felt so alive. This is fullness of life: Glory shining down. Pavement undernea
 
 One of my fatal flaws is the reality that I rarely feel like God is pleased with me. I wrestle with thoughts all the time telling me I have to earn his love and favor by doing good things, that if I do just a little bit more, then *maybe* God will look at me and smile. I know that He loves me, but I also desperately want Him to like me. I want him to look at the days of my life and be able to say, *"This is my beloved son, with whom I am well pleased."*
 
-When I think back to that crisp, bitter-cold morning in February and that holy spectacle of a race, I am reminded of how, in one moment, God showed me that He loves me. And that He actually likes me too--a whole lot. Because Christ took my place, I was given the chance to take his place, and now God rejoices over me, along with the rest of His beloved sons and daughters, with singing.
+When I think back to that crisp, bitter-cold morning in February and that holy spectacle of a race, I am reminded of how, in one moment, God showed me that He loves me. And that He actually likes me too--a whole lot. Because Christ took my place, I was given the chance to take his place, and now God rejoices, singing over me and the rest of His beloved sons and daughters the song of His great love.
 
 Never have I been more confident, more certain that the words of the Good Book, page after page, stand the test of time, proving themselves true amidst the war between Faith and Doubt.
 
