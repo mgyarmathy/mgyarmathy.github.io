@@ -4,7 +4,7 @@
   {% for post in site.related_posts limit: 3 %}
     <li class="large-list--item">
       <a href="{{ post.url }}" title="{{post.title}}" class="large-list--link">
-        <date class="meta">{{page.date | date: "%B %d, %Y"}}</date>
+        <date class="meta">{{post.date | date: "%B %d, %Y"}}</date>
           {{ post.title }}
       </a>
     </li>
