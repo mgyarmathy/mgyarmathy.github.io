@@ -868,6 +868,14 @@ code {
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+::selection {
+  background: #eeeeee;
+  /* Safari */ }
+
+::-moz-selection {
+  background: #eeeeee;
+  /* Firefox */ }
+
 .header-full-bleed {
   margin: 0;
   background-size: cover; }
@@ -875,7 +883,7 @@ code {
     display: inline-block;
     background: #fff;
     padding: 1.5% 2%;
-    margin: 0 2% 5% 5%;
+    margin: 3% 2% 5% 5%;
     max-width: 65%;
     line-height: 95%;
     text-transform: uppercase;
@@ -883,13 +891,20 @@ code {
   .header-full-bleed .full-bleed-subtitle {
     display: inline-block;
     padding: 0 2% 0;
-    margin: 0 5% 5% 5%;
+    margin: 0 5% 3% 5%;
     max-width: 80%;
     background: #fff;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 3px; }
+  .header-full-bleed.frontpage {
+    min-height: 500px; }
+    @media screen and (min-width: 100px) and (max-width: 479px) {
+      .header-full-bleed.frontpage {
+        min-height: 200px; } }
+    .header-full-bleed.frontpage .full-bleed-title {
+      margin: 3% 2% 3% 5%; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .header-full-bleed .full-bleed-title {
       font-size: 32px;
@@ -901,3 +916,11 @@ code {
 .post hr {
   width: 30%;
   margin: 3em auto; }
+
+.fade {
+  opacity: 1;
+  transition: opacity .33s ease-in-out;
+  -moz-transition: opacity .33s ease-in-out;
+  -webkit-transition: opacity .33s ease-in-out; }
+  .fade:hover {
+    opacity: 0.9; }
