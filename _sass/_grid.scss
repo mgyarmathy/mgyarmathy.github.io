@@ -10,17 +10,20 @@
   padding:1em;
   width:100%;
   max-width:768px!important;
-}
 
+  &.wide {
+    max-width:900px!important;
+  }
+}
 
 /* Media Query mixin
    ========================================================================== */
 
 @mixin breakpoint($viewport-width) {
   @if $viewport-width == one-hand {
-    @media screen and (min-width:100px) and (max-width: 479px) { 
-      @content; 
-    }  
+    @media screen and (min-width:100px) and (max-width: 479px) {
+      @content;
+    }
   }
 }
 

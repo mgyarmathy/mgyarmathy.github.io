@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section class="single-column wide">
+  <h1>Articles</h1>
+  <div class="articles-list">
+  {% for post in site.posts %}
+    {% if post.header_img %}
+    <a href="{{post.url}}">
+      <header style="background:#eee url({{post.header_img}}) no-repeat center center; background-size: cover; margin-bottom:2em;" class="header-full-bleed row">
+        <h2 class="h2 full-bleed-title">{{post.title}}</h2>
+        <div class="full-bleed-subtitle">
+          <p><time datetime="{{post.date}}">{{post.date | date: "%B %d, %Y"}}</time></p>
+        </div>
+      </header>
+    </a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</section>
