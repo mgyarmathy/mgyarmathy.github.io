@@ -96,12 +96,13 @@ blockquote {
   padding:1em 0 1.75em 0;
   font-style:italic;
 
-  p, footer, footer a{
+  p, .footer, .footer a{
   }
   p {
     font-size:$type-3;
   }
-  footer,footer a {
+  .footer,.footer a {
+    display:block;
     font-size:$type-4;
     line-height:2;
     text-decoration:none;

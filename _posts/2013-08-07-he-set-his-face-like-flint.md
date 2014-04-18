@@ -66,4 +66,4 @@ People become weary when they act without purpose. When the going gets rough, I 
 
 He is here, and He is in this. And so I set my face like flint, just as He set His face like flint for me, and press on toward the goal.
 
->“O you redeemed ones, on whose behalf this strong resolve was made—you who have been bought by the precious blood of this steadfast, resolute Redeemer—come and think awhile of Him, that your hearts may burn within you and that your faces may be set like flints to live and die for Him who lived and died for you!” <footer>— C.H. Spurgeon</footer>
+>“O you redeemed ones, on whose behalf this strong resolve was made—you who have been bought by the precious blood of this steadfast, resolute Redeemer—come and think awhile of Him, that your hearts may burn within you and that your faces may be set like flints to live and die for Him who lived and died for you!” <span class="footer">— C.H. Spurgeon</span>

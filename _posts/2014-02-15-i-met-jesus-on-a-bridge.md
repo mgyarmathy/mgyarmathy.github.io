@@ -32,6 +32,6 @@ When I think back to that crisp, bitter-cold morning in February and that holy s
 
 Never have I been more confident, more certain that the words of the Good Book, page after page, stand the test of time, proving themselves true amidst the war between Faith and Doubt.
 
->The Lord your God is with you,<br/>&emsp;the Mighty Warrior who saves.<br/>He will take great delight in you;<br/>&emsp;in his love he will no longer rebuke you,<br/>&emsp;but will rejoice over you with singing.<footer>— Zephaniah 3:17</footer>
+>The Lord your God is with you,<br/>&emsp;the Mighty Warrior who saves.<br/>He will take great delight in you;<br/>&emsp;in his love he will no longer rebuke you,<br/>&emsp;but will rejoice over you with singing.<span class="footer">— Zephaniah 3:17</span>
 
 This is the reason why I choose to wake up every morning and hit the pavement running. I don't run because I think God will think highly of me, but rather, I run in light of the fact that He already does. I run because God continues to show me His goodness, and that's something I want to chase after.

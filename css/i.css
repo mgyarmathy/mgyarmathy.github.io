@@ -440,7 +440,8 @@ blockquote {
   font-style: italic; }
   blockquote p {
     font-size: 32px; }
-  blockquote footer, blockquote footer a {
+  blockquote .footer, blockquote .footer a {
+    display: block;
     font-size: 24px;
     line-height: 2;
     text-decoration: none;
