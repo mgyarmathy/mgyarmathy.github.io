@@ -887,31 +887,40 @@ code {
   margin: 0;
   background-size: cover; }
   .header-full-bleed .full-bleed-title {
-    display: inline-block;
+    position: relative;
+    top: 10%;
+    left: 5%;
     background: #fff;
-    padding: 1.5% 2%;
-    margin: 3% 2% 5% 5%;
+    padding: 1.5% 1.5%;
     max-width: 65%;
     line-height: 95%;
     text-transform: uppercase;
     letter-spacing: 7px; }
   .header-full-bleed .full-bleed-subtitle {
-    display: inline-block;
-    padding: 0 2% 0;
-    margin: 0 5% 3% 5%;
-    max-width: 80%;
+    position: relative;
+    padding: 1.5% 2%;
+    top: 20%;
+    left: 5%;
+    max-width: 35%;
     background: #fff;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 3px; }
+    .header-full-bleed .full-bleed-subtitle p {
+      margin: 0.25em 0; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .header-full-bleed .full-bleed-title {
       font-size: 32px;
       min-width: 90%;
-      padding: 1.5% 3.5%; }
+      padding: 3.5% 3.5%;
+      top: 12%; }
     .header-full-bleed .full-bleed-subtitle {
-      padding: 0 3.5%; } }
+      padding: 3.5% 3.5%;
+      max-width: 90%;
+      top: 17%; }
+      .header-full-bleed .full-bleed-subtitle p {
+        margin: 0; } }
 
 .post hr {
   width: 30%;

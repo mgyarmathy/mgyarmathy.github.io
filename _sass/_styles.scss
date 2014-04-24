@@ -14,10 +14,11 @@
   background-size:cover;
 
   .full-bleed-title {
-    display: inline-block;
+    position: relative;
+    top: 10%;
+    left: 5%;
     background: #fff;
-    padding: 1.5% 2%;
-    margin: 3% 2% 5% 5%;
+    padding: 1.5% 1.5%;
     max-width: 65%;
     line-height: 95%;
     text-transform: uppercase;
@@ -25,26 +26,34 @@
   }
 
   .full-bleed-subtitle {
-    display: inline-block;
-    padding: 0 2% 0;
-    margin: 0 5% 3% 5%;
-    max-width: 80%;
+    position: relative;
+    padding: 1.5% 2%;
+    top: 20%;
+    left: 5%;
+    max-width: 35%;
     background: #fff;
     text-transform: uppercase;
     font-weight: 600;
     font-size:$type-4;
     letter-spacing: 3px;
+
+    p { margin: 0.25em 0; }
   }
 
   @include breakpoint(one-hand) {
     .full-bleed-title {
       font-size:$type-3;
       min-width: 90%;
-      padding: 1.5% 3.5%;
+      padding: 3.5% 3.5%;
+      top: 12%;
     }
 
     .full-bleed-subtitle {
-      padding: 0 3.5%;
+      padding: 3.5% 3.5%;
+      max-width: 90%;
+      top: 17%;
+
+      p { margin: 0;}
     }
   }
 }
