@@ -920,7 +920,8 @@ code {
       max-width: 90%;
       top: 17%; }
       .header-full-bleed .full-bleed-subtitle p {
-        margin: 0; } }
+        margin: 0;
+        font-size: 22px; } }
 
 .post hr {
   width: 30%;
