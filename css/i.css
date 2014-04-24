@@ -376,10 +376,10 @@ $margin:;
   font-weight: 400;
   color: #2e2e2e; }
 
-h1, h2 {
+h1, .h1, h2, .h2 {
   font-weight: 600; }
 
-h3, h4, h5, h6 {
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 400; }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -888,7 +888,7 @@ code {
   background-size: cover; }
   .header-full-bleed .full-bleed-title {
     position: relative;
-    top: 10%;
+    top: 15%;
     left: 5%;
     background: #fff;
     padding: 1.5% 1.5%;
@@ -899,7 +899,7 @@ code {
   .header-full-bleed .full-bleed-subtitle {
     position: relative;
     padding: 1.5% 2%;
-    top: 20%;
+    top: 25%;
     left: 5%;
     max-width: 35%;
     background: #fff;

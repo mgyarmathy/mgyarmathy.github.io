@@ -2,7 +2,7 @@
 <body ontouchstart="">
   {% include _navigation.html %}
   <header style="background:#eee url({{page.header_img}}) no-repeat center center; background-size:cover;" class="header-full-bleed row">
-      <h1 class="h1 full-bleed-title">{{page.title}}</h1>
+      <div class="h1 full-bleed-title">{{page.title}}</div>
       {% if page.author %}
       <div class="full-bleed-subtitle">
         <p><time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time></p>
