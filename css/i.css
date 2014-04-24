@@ -505,7 +505,11 @@ a {
 
 .site-nav {
   padding: 0;
-  text-align: right; }
+  text-align: right;
+  position: absolute;
+  width: 100%;
+  top: 5px;
+  right: 0; }
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .site-nav {
       text-align: center; } }

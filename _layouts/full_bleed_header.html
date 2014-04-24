@@ -41,5 +41,12 @@
   {% include _related_posts.html %}
   {% include _footer.html %}
   {% include _google_analytics.html %}
+  <script>
+    $('.header-full-bleed').css('height', window.innerHeight + 'px');
+
+    window.onresize = function () {
+        first.style.height = window.innerHeight - 155 + 'px';
+    };
+  </script>
 </body>
 </html>
