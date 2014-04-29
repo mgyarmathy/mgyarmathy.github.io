@@ -2,6 +2,24 @@
 layout: default
 ---
 
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<header style="background:#eee url(/img/0005-b.jpg) no-repeat center center; background-size:cover;" class="header-full-bleed row">
+   <div class="h1 full-bleed-title">Michael Gyarmathy</div>
+   <div class="h2 full-bleed-subtitle">
+      Student<br/>
+      Freelance Web Developer<br/>
+      Aspiring Writer<br/><br/>
+      <a class="link-hover-blue" href="https://github.com/mgyarmathy"><i class="fa fa-github-square fa-lg"></i> GitHub </a>| 
+      <a class="link-hover-blue" href="https://twitter.com/mgyarmathy_"><i class="fa fa-twitter fa-lg"></i> Twitter </a>| 
+      <a class="link-hover-blue" href="mailto:michael@gyarmathy.me"><i class="fa fa-envelope fa-lg"></i> Email</a>
+   </div>
+</header>
+
 <script>
-window.location = "/articles";
+   $('.header-full-bleed').css('height', window.innerHeight + 'px');
+
+   window.onresize = function () {
+      first.style.height = window.innerHeight + 'px';
+   };
 </script>
