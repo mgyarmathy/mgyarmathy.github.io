@@ -6,20 +6,59 @@ layout: default
 
 <header style="background:#eee url(/img/0005-b.jpg) no-repeat center center; background-size:cover;" class="header-full-bleed row">
    <div class="h1 full-bleed-title">Michael Gyarmathy</div>
-   <div class="h2 full-bleed-subtitle" style="max-width: 45%;">
+   <br/>
+   <div class="h2 full-bleed-subtitle">
       Student at Texas A&amp;M University<br/>
       Freelance Web Developer<br/>
       Aspiring Writer<br/><br/>
-      <a class="link-hover-blue bold" href="https://github.com/mgyarmathy"><i class="fa fa-github-square fa-lg"></i> GitHub </a>| 
-      <a class="link-hover-blue bold" href="https://twitter.com/mgyarmathy_"><i class="fa fa-twitter fa-lg"></i> Twitter </a>| 
-      <a class="link-hover-blue bold" href="mailto:michael@gyarmathy.me"><i class="fa fa-envelope fa-lg"></i> Email</a>
+      <p class="meta">Connect with me via</p>
+      <a class="link-hover-blue bold" href="https://github.com/mgyarmathy">GitHub </a>|
+      <a class="link-hover-blue bold" href="https://twitter.com/mgyarmathy_"> Twitter </a>|
+      <a class="link-hover-blue bold" href="mailto:michael@gyarmathy.me">Email</a>
    </div>
 </header>
+<section id="about">
+   <div class="single-column" style="padding: 2em 0;">
+      <div class="h1">About</div>
+      <p>
+         Howdy, my name is Michael Gyarmathy. I'm a Junior Computer Science major at Texas A&amp;M University. I have a passion for User Experience and Software/Web Development. I'm also a big fan of photography, writing, music, distance running, and breakfast for dinner.
+      </p>
+   </div>
+</section>
+<section id="recent-work">
+   <div class="double-column">
+      <div class="h1">Recent Work</div>
+      <div class="column">
+         <div class="h2">Projects</div>
+         <ul>
+            <li>Island Party 2014</li>
+            <li>Aggies Commit</li>
+         </ul>
+      </div>
+      <div class="column">
+         <div class="h2">Articles</div>
+         <div class="articles-list">
+            {% for post in site.posts limit:3 %}
+              {% if post.header_img %}
+               <a href="{{post.url}}">
+               <header style="background:#eee url({{post.header_img}}) no-repeat center center; background-size: cover; margin-bottom:2em; max-height:150px;" class="header-full-bleed small row">
+                 <div class="h4 full-bleed-title" style="top:5%; max-width: 80%;">{{post.title}}</div>
+               </header>
+               </a>
+              {% endif %}
+            {% endfor %}
+         </div>
+         <div style="text-align:right;">
+            <a class="highlight" href="/articles">All Articles <i class="fa xfa-angle-double-right fa-arrow-circle-o-right highlight"></i></a>
+         </div>
+      </div>
+   </div>
+</section>
 
 <script>
-   $('.header-full-bleed').css('height', window.innerHeight + 'px');
+   $('.header-full-bleed').css('height', Math.max(800,window.innerHeight) + 'px');
 
    window.onresize = function () {
-      first.style.height = window.innerHeight + 'px';
+      first.style.height = Math.max(800,window.innerHeight) + 'px';
    };
 </script>

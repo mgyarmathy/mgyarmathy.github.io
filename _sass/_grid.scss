@@ -2,6 +2,17 @@
    GRID
    ========================================================================== */
 
+/* Media Query mixin
+========================================================================== */
+
+@mixin breakpoint($viewport-width) {
+  @if $viewport-width == one-hand {
+    @media screen and (min-width:100px) and (max-width: 479px) {
+      @content;
+    }
+  }
+}
+
 /* Single and responsive column
    ========================================================================== */
 
@@ -16,13 +27,29 @@
   }
 }
 
-/* Media Query mixin
-   ========================================================================== */
+.double-column {
+  margin:0 auto;
+  padding:1em;
+  width:100%;
+  max-width:768px!important;
 
-@mixin breakpoint($viewport-width) {
-  @if $viewport-width == one-hand {
-    @media screen and (min-width:100px) and (max-width: 479px) {
-      @content;
+  .column {
+    vertical-align: top;
+    margin:0 auto;
+    padding: 0 2em;
+    width: 49%;
+    display: inline-block;
+    max-width: (768px/2) !important;
+    @include breakpoint(one-hand){
+        width: 100%;
+    }
+  }
+
+  &.wide {
+    max-width:900px!important;
+
+    .column {
+      max-width:(900px/2)!important;
     }
   }
 }

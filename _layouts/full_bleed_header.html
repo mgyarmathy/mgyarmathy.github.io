@@ -3,6 +3,7 @@
   {% include _navigation.html %}
   <header style="background:#eee url({{page.header_img}}) no-repeat center center; background-size:cover;" class="header-full-bleed row">
       <div class="h1 full-bleed-title">{{page.title}}</div>
+      <br/>
       {% if page.author %}
       <div class="full-bleed-subtitle">
         <p><time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time></p>
@@ -42,10 +43,10 @@
   {% include _footer.html %}
   {% include _google_analytics.html %}
   <script>
-    $('.header-full-bleed').css('height', window.innerHeight + 'px');
+    $('.header-full-bleed').css('height', Math.max(800,window.innerHeight) + 'px');
 
     window.onresize = function () {
-        first.style.height = window.innerHeight - 155 + 'px';
+        first.style.height = Math.max(800,window.innerHeight) + 'px';
     };
   </script>
 </body>

@@ -14,22 +14,28 @@
   background-size:cover;
 
   .full-bleed-title {
-    position: relative;
-    top: 15%;
-    left: 5%;
+    display: inline-block;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 28%;
     background: #fff;
-    padding: 1.5% 1.5%;
+    padding: 1.5%;
     max-width: 65%;
     line-height: 95%;
     text-transform: uppercase;
     letter-spacing: 7px;
+    word-wrap: break-word;
+  }
+
+  &.small .full-bleed-title {
+    margin-top: 1%;
   }
 
   .full-bleed-subtitle {
-    position: relative;
-    padding: 1.5% 2%;
-    top: 20%;
-    left: 5%;
+    display: inline-block;
+    padding: 1.5%;
+    margin-top: 4%;
+    margin-left: 5%;
     max-width: 35%;
     background: #fff;
     text-transform: uppercase;
