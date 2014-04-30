@@ -382,6 +382,9 @@ h1, .h1, h2, .h2 {
 h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 400; }
 
+.bold {
+  font-weight: 600; }
+
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: .25em; }
 
@@ -899,7 +902,7 @@ code {
   .header-full-bleed .full-bleed-subtitle {
     position: relative;
     padding: 1.5% 2%;
-    top: 25%;
+    top: 20%;
     left: 5%;
     max-width: 35%;
     background: #fff;
