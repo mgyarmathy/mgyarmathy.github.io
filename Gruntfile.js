@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 			html: {
 				files: [
                'index.html',
-               'about/index.html',
+               'projects/index.html',
                'articles/index.html',
                '_posts/*.html',
                '_posts/*.md',
