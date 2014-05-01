@@ -2,23 +2,25 @@
 layout: default
 ---
 
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-<header style="background:#eee url(/img/0005-b.jpg) no-repeat center center; background-size:cover;" class="header-full-bleed row">
+<header id="page-header" style="background:#eee url(/img/0005-b.jpg) no-repeat center center; background-size:cover;" class="header-full-bleed row">
    <div class="h1 full-bleed-title">Michael Gyarmathy</div>
    <br/>
    <div class="h2 full-bleed-subtitle">
-      Student at Texas A&amp;M University<br/>
-      Freelance Web Developer<br/>
-      Aspiring Writer<br/><br/>
+      <i class="fa fa-angle-double-right"></i> Student at Texas A&amp;M University<br/>
+      <i class="fa fa-angle-double-right"></i> Freelance Web Developer<br/>
+      <i class="fa fa-angle-double-right"></i> Aspiring Writer<br/><br/>
       <p class="meta">Connect with me via</p>
       <a class="link-hover-blue bold" href="https://github.com/mgyarmathy">GitHub </a>|
       <a class="link-hover-blue bold" href="https://twitter.com/mgyarmathy_"> Twitter </a>|
       <a class="link-hover-blue bold" href="mailto:michael@gyarmathy.me">Email</a>
    </div>
+   <br/>
+   <div class="header-scroll">
+      <i class="fa fa-angle-double-down fa-4x pulse"></i>
+   </div>
 </header>
 <section id="about">
-   <div class="single-column" style="padding: 2em 0;">
+   <div class="single-column">
       <div class="h1">About</div>
       <p>
          Howdy, my name is Michael Gyarmathy. I'm a Junior Computer Science major at Texas A&amp;M University. I have a passion for User Experience and Software/Web Development. I'm also a big fan of photography, writing, music, distance running, and breakfast for dinner.
@@ -27,7 +29,7 @@ layout: default
 </section>
 <section id="recent-work">
    <div class="double-column">
-      <div class="h1">Recent Work</div>
+      <div class="h1" style="margin-left:-8px;">Recent Work</div>
       <div class="column">
          <div class="h2">Projects</div>
          <ul>
@@ -49,16 +51,32 @@ layout: default
             {% endfor %}
          </div>
          <div style="text-align:right;">
-            <a class="highlight" href="/articles">All Articles <i class="fa xfa-angle-double-right fa-arrow-circle-o-right highlight"></i></a>
+            <a class="highlight" href="/articles">All Articles <i class="fa fa-angle-double-right highlight"></i></a>
          </div>
       </div>
    </div>
 </section>
 
 <script>
-   $('.header-full-bleed').css('height', Math.max(800,window.innerHeight) + 'px');
+   $('#page-header').css('min-height',window.innerHeight + 'px');
+   $(document).ready(function() {
+   if (window.innerHeight < $('#page-header').height()) {
+      $('.header-scroll').hide();
+   }
+});
 
    window.onresize = function () {
-      first.style.height = Math.max(800,window.innerHeight) + 'px';
+      $('#page-header').css('min-height',window.innerHeight + 'px');
+      $('.header-scroll').show();
+      if (window.innerHeight < $('#page-header').height()) {
+         $('.header-scroll').hide();
+      }
    };
+
+   $('.header-scroll').click(function() {
+      $('html, body').animate({
+          scrollTop: $('#about').offset().top
+      }, 500);
+    return false;
+   });
 </script>

@@ -22,6 +22,10 @@
   width:100%;
   max-width:768px!important;
 
+  @include breakpoint(one-hand){
+    width: 100%;
+  }
+
   &.wide {
     max-width:900px!important;
   }

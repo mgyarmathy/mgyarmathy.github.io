@@ -1,7 +1,7 @@
 {% include _head.html %}
 <body ontouchstart="">
   {% include _navigation.html %}
-  <header style="background:#eee url({{page.header_img}}) no-repeat center center; background-size:cover;" class="header-full-bleed row">
+  <header id="page-header" style="background:#eee url({{page.header_img}}) no-repeat center center; background-size:cover;" class="header-full-bleed row">
       <div class="h1 full-bleed-title">{{page.title}}</div>
       <br/>
       {% if page.author %}
@@ -10,6 +10,9 @@
         <p>By: {{page.author}}</p>
       </div>
       {% endif %}
+      <div class="header-scroll">
+        <i class="fa fa-angle-double-down fa-4x pulse" style="color:#ccc;"></i>
+      </div>
     </header>
     <div class="single-column">
   <article class="mt-2 post">
@@ -43,11 +46,18 @@
   {% include _footer.html %}
   {% include _google_analytics.html %}
   <script>
-    $('.header-full-bleed').css('height', Math.max(800,window.innerHeight) + 'px');
+    $('#page-header').css('min-height',window.innerHeight + 'px');
 
     window.onresize = function () {
-        first.style.height = Math.max(800,window.innerHeight) + 'px';
+      $('#page-header').css('min-height',window.innerHeight + 'px');
     };
+
+    $('.header-scroll').click(function() {
+      $('html, body').animate({
+          scrollTop: $('.single-column').offset().top
+      }, 500);
+    return false;
+   });
   </script>
 </body>
 </html>

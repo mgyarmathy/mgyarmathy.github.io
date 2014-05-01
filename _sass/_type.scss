@@ -29,10 +29,18 @@ h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
 
 h1,.h1 {
   font-size:$type-1;
+
+  @include breakpoint(one-hand) {
+    font-size:$type-2;
+  }
 }
 
 h2,.h2 {
   font-size:$type-2;
+
+  @include breakpoint(one-hand) {
+    font-size:$type-3;
+  }
 }
 
 h3,.h3 {

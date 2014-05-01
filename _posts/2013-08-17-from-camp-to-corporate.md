@@ -43,7 +43,7 @@ thank you. Each of you have encouraged me throughout the summer, whether you kne
 
 People are valuable, but I recognize now how often lose sight of this truth and treat them like commodities. Over the first few weeks in Austin, I met a lot of new people. However, I found myself time and time again in the middle of a conversation with someone, realizing that I could not remember their name. One day, I was convicted of the fact that I tend to be more focused on making a good impression and making much of myself in a conversation than on being compassionate and loving to the person standing in front of me.
 
-*My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak, and slow to become angry,because human anger does not produce the righteousness that God desires. // James 1:19-20*
+*My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak, and slow to become angry, because human anger does not produce the righteousness that God desires. // James 1:19-20*
 
 Shame on me if I have ever forgotten your name. I’m working on listening more and speaking less. Jesus was fully devoted to the people around him, and I want to be the same. You are too valuable in God’s eyes for me to not give you my full attention.
 

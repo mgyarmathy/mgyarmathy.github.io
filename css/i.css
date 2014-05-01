@@ -368,6 +368,9 @@ $margin:;
   padding: 1em;
   width: 100%;
   max-width: 768px !important; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    .single-column {
+      width: 100%; } }
   .single-column.wide {
     max-width: 900px !important; }
 
@@ -410,9 +413,15 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1 {
   font-size: 96px; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    h1, .h1 {
+      font-size: 64px; } }
 
 h2, .h2 {
   font-size: 64px; }
+  @media screen and (min-width: 100px) and (max-width: 479px) {
+    h2, .h2 {
+      font-size: 32px; } }
 
 h3, .h3 {
   font-size: 32px; }
@@ -913,7 +922,6 @@ code {
     display: inline-block;
     margin-top: 8%;
     margin-left: 5%;
-    margin-right: 28%;
     background: #fff;
     padding: 1.5%;
     max-width: 65%;
@@ -923,6 +931,9 @@ code {
     word-wrap: break-word; }
   .header-full-bleed.small .full-bleed-title {
     margin-top: 1%; }
+    @media screen and (min-width: 100px) and (max-width: 479px) {
+      .header-full-bleed.small .full-bleed-title {
+        font-size: 16px; } }
   .header-full-bleed .full-bleed-subtitle {
     display: inline-block;
     padding: 1.5%;
@@ -941,15 +952,61 @@ code {
       font-size: 32px;
       min-width: 90%;
       padding: 3.5% 3.5%;
-      top: 12%; }
+      margin-top: 18%; }
     .header-full-bleed .full-bleed-subtitle {
+      font-size: 16px;
       padding: 3.5% 3.5%;
       max-width: 90%;
       top: 17%; }
       .header-full-bleed .full-bleed-subtitle p {
         margin: 0;
-        font-size: 22px; } }
+        font-size: 16px; }
+        .header-full-bleed .full-bleed-subtitle p.meta {
+          font-size: 14px; } }
+
+.header-scroll {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  cursor: pointer; }
 
 .post hr {
   width: 30%;
   margin: 3em auto; }
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes pulse {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes pulse {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes pulse {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.pulse {
+  /*animation*/
+  -webkit-animation: pulse 1.5s linear infinite alternate;
+  -moz-animation: pulse 1.5s linear infinite alternate;
+  -ms-animation: pulse 1.5s linear infinite alternate;
+  -o-animation: pulse 1.5s linear infinite alternate;
+  animation: pulse 1.5s linear infinite alternate; }
