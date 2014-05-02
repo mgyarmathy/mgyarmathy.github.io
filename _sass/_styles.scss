@@ -2,6 +2,10 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+body {
+  background-image:url('/img/crossword.png');
+}
+
 ::selection {
   background: $grey-light; /* Safari */
   }
