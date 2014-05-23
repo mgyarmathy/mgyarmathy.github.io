@@ -2,6 +2,7 @@
 layout: full_bleed_header
 title: "I Met Jesus on a Bridge"
 author: Michael Gyarmathy
+category: articles
 
 header_img: "/img/I_Met_Jesus_On_A_Bridge.jpg"
 ---

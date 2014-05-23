@@ -1,18 +1,15 @@
-
 {% include _head.html %}
 <body ontouchstart="">
   {% include _navigation.html %}
   <header id="page-header" style="background:#eee url({{page.header_img}}) no-repeat center center; background-size:cover;" class="header-full-bleed row">
       <div class="h1 full-bleed-title">{{page.title}}</div>
       <br/>
-      {% if page.author %}
       <div class="full-bleed-subtitle">
         <p><time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time></p>
-        <p>By: {{page.author}}</p>
+        <p>{{page.project_type}}</p>
       </div>
-      {% endif %}
       <div class="header-scroll">
-        <i class="fa fa-angle-double-down fa-4x pulse" style="color:#ccc;"></i>
+        <i class="fa fa-angle-double-down fa-4x pulse"></i>
       </div>
     </header>
     <div class="single-column">

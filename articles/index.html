@@ -6,7 +6,7 @@ title: "Articles"
 <section class="single-column wide">
   <h1>Articles</h1>
   <div class="articles-list">
-  {% for post in site.posts %}
+  {% for post in site.categories.articles %}
     {% if post.header_img %}
     <a href="{{post.url}}">
       <header style="background:#eee url({{post.header_img}}) no-repeat center center; background-size: cover; margin-bottom:2em;" class="header-full-bleed small row">

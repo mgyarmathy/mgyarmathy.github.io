@@ -2,6 +2,7 @@
 layout: full_bleed_header
 title: "Failing Is Not Just For Failures"
 author: Michael Gyarmathy
+category: articles
 
 header_img: "/img/all-faiths.jpg"
 ---

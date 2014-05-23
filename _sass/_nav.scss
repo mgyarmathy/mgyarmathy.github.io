@@ -39,3 +39,13 @@
 
   @extend .link-hover-blue;
 }
+
+.light {
+  color: #bbb;
+  &:hover,
+  &:focus,
+  &:active {
+      color: #fff;
+      .meta {color:#fff;}
+   }
+}

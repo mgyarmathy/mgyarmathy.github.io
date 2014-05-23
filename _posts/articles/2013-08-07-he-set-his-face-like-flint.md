@@ -2,6 +2,8 @@
 layout: full_bleed_header
 title: "He Set His Face Like Flint"
 author: Michael Gyarmathy
+category: articles
+theme: light
 
 header_img: "/img/Jesus_Goes_Up_To_Jerusalem_James_Tissot.jpg"
 ---

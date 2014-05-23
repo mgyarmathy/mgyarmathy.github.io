@@ -20,7 +20,7 @@ googleID:
 paginate: 5
 
 # Style of permalinks
-permalink: /:title
+permalink: /:categories/:title
 
 # Variable format options for URL styles below
 # pretty                                          => /2009/04/29/slap-chop/index.html

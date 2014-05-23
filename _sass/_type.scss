@@ -99,9 +99,6 @@ p {
 
 .ct {
   text-align:center;
-  @include breakpoint(one-hand) {
-    text-align:left;
-  }
 }
 
 blockquote {

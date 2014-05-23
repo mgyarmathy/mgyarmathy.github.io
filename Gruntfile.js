@@ -42,8 +42,8 @@ module.exports = function(grunt) {
                'index.html',
                'projects/index.html',
                'articles/index.html',
-               '_posts/*.html',
-               '_posts/*.md',
+               '_posts/*/*.html',
+               '_posts/*/*.md',
                '_layouts/*.html',
                '_includes/*.html'
             ],

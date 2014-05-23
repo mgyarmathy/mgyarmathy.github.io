@@ -2,6 +2,7 @@
 layout: full_bleed_header
 title: "From Camp To Corporate"
 author: Michael Gyarmathy
+category: articles
 
 header_img: "/img/pool.jpg"
 ---

@@ -2,6 +2,8 @@
 layout: full_bleed_header
 title: "Surrender Is Better Than Speculation"
 author: Michael Gyarmathy
+category: articles
+theme: light
 
 header_img: "/img/Surrender_Is_Better_Than_Speculation.jpg"
 ---

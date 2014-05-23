@@ -35,18 +35,25 @@ layout: default
       <!--<div class="h1" style="margin-left:-8px;">Recent Work</div>-->
       <div class="column">
          <div class="h2">Projects</div>
-         <ul>
-            <li>...coming soon!</li>
-         <!--
-            <li>Island Party 2014</li>
-            <li>Aggies Commit</li>
-         -->
-         </ul>
+         <div class="projects-list">
+            {% for post in site.categories.projects limit:3 %}
+              {% if post.header_img %}
+               <a href="{{post.url}}">
+               <header style="background:#eee url({{post.header_img}}) no-repeat center center; background-size: cover; margin-bottom:2em; max-height:150px;" class="header-full-bleed small row">
+                 <div class="h4 full-bleed-title" style="top:5%; max-width: 80%;">{{post.title}}</div>
+               </header>
+               </a>
+              {% endif %}
+            {% endfor %}
+         </div>
+         <div style="text-align:right;">
+            <a class="highlight" href="/projects">All Projects <i class="fa fa-angle-double-right highlight"></i></a>
+         </div>
       </div>
       <div class="column">
          <div class="h2">Articles</div>
          <div class="articles-list">
-            {% for post in site.posts limit:3 %}
+            {% for post in site.categories.articles limit:3 %}
               {% if post.header_img %}
                <a href="{{post.url}}">
                <header style="background:#eee url({{post.header_img}}) no-repeat center center; background-size: cover; margin-bottom:2em; max-height:150px;" class="header-full-bleed small row">
@@ -65,11 +72,19 @@ layout: default
 
 <script>
    $('#page-header').css('min-height',window.innerHeight + 'px');
+
    $(document).ready(function() {
-   if (window.innerHeight < $('#page-header').height()) {
-      $('.header-scroll').hide();
-   }
-});
+      if (window.innerHeight < $('#page-header').height()) {
+         $('.header-scroll').hide();
+      }
+
+      $('.header-scroll').click(function() {
+         $('html, body').animate({
+             scrollTop: $('#about').offset().top
+         }, 500);
+       return false;
+      });
+   });
 
    window.onresize = function () {
       $('#page-header').css('min-height',window.innerHeight + 'px');
@@ -78,11 +93,4 @@ layout: default
          $('.header-scroll').hide();
       }
    };
-
-   $('.header-scroll').click(function() {
-      $('html, body').animate({
-          scrollTop: $('#about').offset().top
-      }, 500);
-    return false;
-   });
 </script>

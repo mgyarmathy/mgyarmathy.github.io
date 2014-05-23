@@ -463,9 +463,6 @@ p {
 
 .ct {
   text-align: center; }
-  @media screen and (min-width: 100px) and (max-width: 479px) {
-    .ct {
-      text-align: left; } }
 
 blockquote {
   padding: 1em 0 1.75em 0;
@@ -566,6 +563,13 @@ a {
   padding-right: 1em;
   text-decoration: none;
   text-transform: uppercase; }
+
+.light {
+  color: #bbb; }
+  .light:hover, .light:focus, .light:active {
+    color: #fff; }
+    .light:hover .meta, .light:focus .meta, .light:active .meta {
+      color: #fff; }
 
 .row {
   padding: 2em 0; }
@@ -925,6 +929,7 @@ body {
     display: inline-block;
     margin-top: 8%;
     margin-left: 5%;
+    margin-right: 10%;
     background: #fff;
     padding: 1.5%;
     max-width: 65%;
@@ -955,7 +960,8 @@ body {
       font-size: 32px;
       min-width: 90%;
       padding: 3.5% 3.5%;
-      margin-top: 18%; }
+      margin-top: 18%;
+      margin-right: 0; }
     .header-full-bleed .full-bleed-subtitle {
       font-size: 16px;
       padding: 3.5% 3.5%;
@@ -973,6 +979,8 @@ body {
   position: absolute;
   bottom: 5%;
   cursor: pointer; }
+  .header-scroll .fa {
+    color: #ccc; }
 
 .post hr {
   width: 30%;
@@ -1013,3 +1021,7 @@ body {
   -ms-animation: pulse 1.5s linear infinite alternate;
   -o-animation: pulse 1.5s linear infinite alternate;
   animation: pulse 1.5s linear infinite alternate; }
+
+.header-scroll .fa.light {
+  color: #ddd;
+  text-shadow: 0px 0px 1px #333; }
