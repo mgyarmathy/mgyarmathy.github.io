@@ -85,12 +85,4 @@ layout: default
        return false;
       });
    });
-
-   window.onresize = function () {
-      $('#page-header').css('min-height',window.innerHeight + 'px');
-      $('.header-scroll').show();
-      if (window.innerHeight < $('#page-header').height()) {
-         $('.header-scroll').hide();
-      }
-   };
 </script>

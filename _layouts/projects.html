@@ -46,10 +46,6 @@
   <script>
     $('#page-header').css('min-height',window.innerHeight + 'px');
 
-    window.onresize = function () {
-      $('#page-header').css('min-height',window.innerHeight + 'px');
-    };
-
     $(document).ready(function() {
       if (window.innerHeight < $('#page-header').height()) {
          $('.header-scroll').hide();
