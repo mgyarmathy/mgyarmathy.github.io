@@ -23,10 +23,10 @@ layout: default
    <div class="single-column mt-2">
       <!--<div class="h1">About</div>-->
       <div style="text-align:center;">
-         <img style="width:33%; border-radius: 20%;" src="/img/michael.png"/>
+         <img style="width:33%;" src="/img/michael.png"/>
       </div>
       <p>
-         Howdy, my name is Michael Gyarmathy. I'm a Senior Computer Science major at Texas A&amp;M University. I have a passion for User Experience and Software/Web Development. I'm also a big fan of photography, writing, music, distance running, and breakfast for dinner.
+         Howdy, my name is Michael Gyarmathy. I'm a Senior Computer Science major at Texas A&amp;M University. I have a passion for User Experience and Web Development. I'm also a big fan of photography, writing, music, distance running, and breakfast for dinner.
       </p>
    </div>
 </section>
@@ -81,8 +81,16 @@ layout: default
       $('.header-scroll').click(function() {
          $('html, body').animate({
              scrollTop: $('#about').offset().top
-         }, 500);
+         }, 1250);
        return false;
+      });
+
+
+
+      $(window).scroll(function() {
+        var s = $(window).scrollTop();
+        //$('#page-header .full-bleed-title').css('opacity', (100-(s/8))/100);
+        //$('#page-header .full-bleed-subtitle').css('opacity', (100-(s/8))/100);
       });
    });
 </script>

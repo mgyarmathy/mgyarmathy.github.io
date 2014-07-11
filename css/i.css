@@ -517,7 +517,7 @@ date {
   color: #777777; }
 .post ul {
   list-style-type: disc;
-  margin-left: 1em; }
+  margin-left: 1.5em; }
 
 a {
   text-decoration: none; }
@@ -586,6 +586,28 @@ a {
 img {
   width: 100%;
   margin: 1em 0; }
+  img.large {
+    width: 130%;
+    margin-left: -15%; }
+    @media screen and (min-width: 100px) and (max-width: 479px) {
+      img.large {
+        width: 100%;
+        margin-left: inherit; } }
+  img.small {
+    width: 40%; }
+  img.right {
+    float: right;
+    display: inline;
+    margin: 0;
+    margin-left: 20px; }
+
+.caption {
+  display: block;
+  margin-top: -2em;
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+  color: #777777; }
 
 .hll {
   background-color: #333333; }

@@ -1,4 +1,34 @@
 img {
   width:100%;
   margin:1em 0;
+
+  &.large {
+    width: 130%;
+    margin-left: -15%;
+
+    @include breakpoint(one-hand) {
+      width: 100%;
+      margin-left: inherit;
+    }
+  }
+
+  &.small {
+    width: 40%;
+  }
+
+  &.right {
+    float: right;
+    display: inline;
+    margin: 0;
+    margin-left: 20px;
+  }
+}
+
+.caption {
+    display: block;
+    margin-top: -2em;
+    font-size: $type-5;
+    text-align: center;
+    font-style: italic;
+    color: $grey-medium;
 }
