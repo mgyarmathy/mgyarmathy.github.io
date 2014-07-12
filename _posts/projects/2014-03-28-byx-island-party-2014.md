@@ -53,7 +53,7 @@ easily identifiable.
 
 ## The Result 
 
-![](/img/islandpartydevices.png){: .large} <span class="caption">Texas A&amp;M BYX Island Party 2014 site redesign - <a class="highlight" href="http://aggieislandparty.com">http://aggieislandparty.com</a></span>
+![](/img/islandpartydevices.png){: .large} <span class="caption">Texas A&amp;M BYX Island Party 2014 site redesign - <a href="http://aggieislandparty.com">http://aggieislandparty.com</a></span>
 
 I was very pleased with how the site turned out. I opted for a single page layout with a 
 fixed navigation bar to allow site visitors to quickly scroll between various portions of
@@ -62,7 +62,7 @@ the page.
 ![](/img/IPsiteiphone.png){: .small.right} This project also involved a great deal of 
 collaboration with a few of my fellow BYX brothers. The Island Party 2014 logo was designed 
 by Brian Hutson. I also worked with my buddy Grant over at 
-[Grant Daniels Photography](http://www.grantdanielsphotography.com/){: .highlight} 
+[Grant Daniels Photography](http://www.grantdanielsphotography.com/) 
 to supply the site's header images.
 
 From a logistical standpoint, the site redesign added a lot of value to BYX Island Party's 
@@ -71,14 +71,20 @@ than any historical numbers. The site also established a solid web presence for 
 be shared on social media platforms and greatly influenced event attendance. In fact, **Island 
 Party 2014 broke attendance records for both days of the event**.
 
+![](/img/IPsitecomparison.png){: .large} <span class="caption">out with the old, in with the new</span>
+
+---
+
 ## How Can I Help You?
 
 I gave BYX Island Party's website a much needed redesign, and the results show that it was worth 
 the effort. If you have a project in mind, I would love to help you out. I build **valuable, 
 visually-stunning websites** that produce **real, tangible results**. If you're interested, shoot 
-an email over to [michael@gyarmathy.me](mailto:michael@gyarmathy.me){: .highlight} and let's get 
+an email over to [michael@gyarmathy.me](mailto:michael@gyarmathy.me) and let's get 
 something started.
 
-![](/img/IPsitecomparison.png){: .large} <span class="caption">out with the old, in with the new</span>
+---
+
+
 
 

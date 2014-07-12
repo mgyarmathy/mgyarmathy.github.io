@@ -532,6 +532,13 @@ a {
 .highlight {
   color: #003399; }
 
+.post a {
+  font-weight: 600;
+  border-bottom: 0.15em solid #2e2e2e; }
+  .post a:hover {
+    color: #003399;
+    border-bottom-color: #003399; }
+
 .site-nav {
   padding: 0;
   text-align: right;

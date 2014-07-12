@@ -16,3 +16,13 @@ a {
 .highlight {
    color:$blue-dark;
 }
+
+.post a {
+    font-weight: 600;
+    border-bottom: 0.15em solid $black;
+
+    &:hover {
+        color: $blue-dark;
+        border-bottom-color: $blue-dark;
+    }
+}
