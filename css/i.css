@@ -452,7 +452,7 @@ p {
     .post h1 {
       font-size: 32px; } }
 .post footer {
-  color: #eeeeee; }
+  color: #eee; }
 
 @media screen and (min-width: 100px) and (max-width: 479px) {
   .h1-r {
@@ -488,10 +488,10 @@ em {
   text-transform: uppercase; }
 
 date {
-  color: #777777; }
+  color: #777; }
 
 .bb {
-  border-bottom: 1px dotted #eeeeee; }
+  border-bottom: 1px dotted #eee; }
 
 .large-list {
   font-size: 24px; }
@@ -514,7 +514,7 @@ date {
   font-weight: bold; }
 .post dd {
   margin-bottom: .5em;
-  color: #777777; }
+  color: #777; }
 .post ul {
   list-style-type: disc;
   margin-left: 1.5em; }
@@ -527,7 +527,7 @@ a {
   .link-hover-blue:hover .meta, .large-list .large-list--link:hover .meta, .site-nav--link:hover .meta, .link-hover-blue:focus .meta, .large-list .large-list--link:focus .meta, .site-nav--link:focus .meta {
     color: #003399; }
 .link-hover-blue:active, .large-list .large-list--link:active, .site-nav--link:active {
-  color: #3366cc; }
+  color: #3366CC; }
 
 .highlight {
   color: #003399; }
@@ -565,7 +565,7 @@ a {
 .site-nav--link {
   font-weight: 400;
   letter-spacing: 2px;
-  color: #777777;
+  color: #777;
   display: block;
   padding-right: 1em;
   text-decoration: none;
@@ -614,7 +614,7 @@ img {
   font-size: 16px;
   text-align: center;
   font-style: italic;
-  color: #777777; }
+  color: #777; }
 
 .hll {
   background-color: #333333; }
@@ -626,11 +626,11 @@ img {
 
 /* Comment */
 .err {
-  color: white; }
+  color: #ffffff; }
 
 /* Error */
 .g {
-  color: white; }
+  color: #ffffff; }
 
 /* Generic */
 .k {
@@ -639,23 +639,23 @@ img {
 
 /* Keyword */
 .l {
-  color: white; }
+  color: #ffffff; }
 
 /* Literal */
 .n {
-  color: white; }
+  color: #ffffff; }
 
 /* Name */
 .o {
-  color: white; }
+  color: #ffffff; }
 
 /* Operator */
 .x {
-  color: white; }
+  color: #ffffff; }
 
 /* Other */
 .p {
-  color: white; }
+  color: #ffffff; }
 
 /* Punctuation */
 .cm {
@@ -684,15 +684,15 @@ img {
 
 /* Comment.Special */
 .gd {
-  color: white; }
+  color: #ffffff; }
 
 /* Generic.Deleted */
 .ge {
-  color: white; }
+  color: #ffffff; }
 
 /* Generic.Emph */
 .gr {
-  color: white; }
+  color: #ffffff; }
 
 /* Generic.Error */
 .gh {
@@ -701,7 +701,7 @@ img {
 
 /* Generic.Heading */
 .gi {
-  color: white; }
+  color: #ffffff; }
 
 /* Generic.Inserted */
 .go {
@@ -710,11 +710,11 @@ img {
 
 /* Generic.Output */
 .gp {
-  color: white; }
+  color: #ffffff; }
 
 /* Generic.Prompt */
 .gs {
-  color: white; }
+  color: #ffffff; }
 
 /* Generic.Strong */
 .gu {
@@ -723,7 +723,7 @@ img {
 
 /* Generic.Subheading */
 .gt {
-  color: white; }
+  color: #ffffff; }
 
 /* Generic.Traceback */
 .kc {
@@ -756,7 +756,7 @@ img {
 
 /* Keyword.Type */
 .ld {
-  color: white; }
+  color: #ffffff; }
 
 /* Literal.Date */
 .m {
@@ -774,11 +774,11 @@ img {
 
 /* Name.Attribute */
 .nb {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Builtin */
 .nc {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Class */
 .no {
@@ -786,15 +786,15 @@ img {
 
 /* Name.Constant */
 .nd {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Decorator */
 .ni {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Entity */
 .ne {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Exception */
 .nf {
@@ -803,19 +803,19 @@ img {
 
 /* Name.Function */
 .nl {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Label */
 .nn {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Namespace */
 .nx {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Other */
 .py {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Property */
 .nt {
@@ -828,7 +828,7 @@ img {
 
 /* Name.Variable */
 .ow {
-  color: white; }
+  color: #ffffff; }
 
 /* Operator.Word */
 .w {
@@ -900,7 +900,7 @@ img {
 
 /* Literal.String.Symbol */
 .bp {
-  color: white; }
+  color: #ffffff; }
 
 /* Name.Builtin.Pseudo */
 .vc {
@@ -921,7 +921,7 @@ img {
 
 /* Literal.Number.Integer.Long */
 code {
-  background: #222222;
+  background: #222;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -938,17 +938,17 @@ code {
       padding: 1em 0.2em; } }
 
 * {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   background-image: url("/img/crossword.png"); }
 
 ::selection {
-  background: #eeeeee;
+  background: #eee;
   /* Safari */ }
 
 ::-moz-selection {
-  background: #eeeeee;
+  background: #eee;
   /* Firefox */ }
 
 .header-full-bleed {
@@ -1018,31 +1018,23 @@ body {
 @-webkit-keyframes pulse {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
 @-moz-keyframes pulse {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
 @-o-keyframes pulse {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
 @keyframes pulse {
   0% {
     opacity: 0; }
-
   100% {
     opacity: 1; } }
-
 .pulse {
   /*animation*/
   -webkit-animation: pulse 1.5s linear infinite alternate;
@@ -1054,3 +1046,5 @@ body {
 .header-scroll .fa.light {
   color: #ddd;
   text-shadow: 0px 0px 1px #333; }
+
+/*# sourceMappingURL=i.css.map */
