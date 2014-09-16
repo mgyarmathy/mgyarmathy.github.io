@@ -12,9 +12,9 @@ header_img: "/img/vnuate-klipuycate.jpg"
 
 ## What is Vnuate Klipuycate?
 
-Your job is simple: create a webpage that ranks the highest for the query vnuate klipuycate. As of September 15 there are no hits for this query on either Google or Bing. Based on our discussions of search engine ranking algorithms, you know that several factors may impact a page's rank. Your goal is to use this knowledge to promote your own page to the top of the list.
+Your job is simple: create a webpage that ranks the highest for the query "vnuate klipuycate". As of September 15 there are no hits for this query on either Google or Bing. Based on our discussions of search engine ranking algorithms, you know that several factors may impact a page's rank. Your goal is to use this knowledge to promote your own page to the top of the list.
 
-### **Current Techniques of Boosting PageRank:**
+### **Current Techniques used to Boost PageRank:**
 
 - Add keyword and description meta tags
 - Use schema.org microdata to list Vnuate Klipuycate as a Business/Organization
