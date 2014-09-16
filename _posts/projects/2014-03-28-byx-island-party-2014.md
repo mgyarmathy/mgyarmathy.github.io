@@ -9,7 +9,7 @@ theme: light
 header_img: "/img/byx-island-party-2014.jpg"
 ---
 
-<h2> The Story </h2>
+## The Story
 
 BYX Island Party at Texas A&amp;M University is an annual outdoor music festival hosted 
 by Beta Upsilon Chi Fraternity. Island Party is an evangelical outreach event for the 

@@ -8,7 +8,7 @@ description: Michael Gyarmathy Blog
 author: Michael Gyarmathy
 
 #url: "[http:// ]"
-url: "http://mgyarmathy.github.io"
+url: "http://michael.gyarmathy.me"
 
 markdown: kramdown
 
@@ -17,6 +17,8 @@ paginate: 5
 
 # Style of permalinks
 permalink: /:categories/:title
+
+gems: ['jekyll-sitemap']
 
 # Variable format options for URL styles below
 # pretty                                          => /2009/04/29/slap-chop/index.html

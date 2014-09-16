@@ -7,9 +7,12 @@
    </title>
    <meta name="author" content="{{site.author}}">
    {% if page.excerpt %}
-   <meta name="description" content="{{page.excerpt}}">
+   <meta name="description" content="{{page.excerpt | strip_html}}">
    {% else %}
    <meta name="description" content="{{site.description}}">
+   {% endif %}
+   {% if page.keywords %}
+   <meta name="keywords" content="{{page.keywords}}">
    {% endif %}
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>

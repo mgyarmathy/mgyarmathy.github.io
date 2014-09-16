@@ -25,6 +25,17 @@ layout: default
       <div style="text-align:center;">
          <img style="width:33%;" src="/img/michael.png"/>
       </div>
+      <!-- <div data-fht>Howdy, my name is</div>
+      <div data-fht>Michael Gyarmathy</div>
+      <div data-fht>I'm a Senior Computer Science major at</div>
+      <div data-fht>Texas A&amp;M University</div>
+      <div data-fht>I have a passion for</div>
+      <div data-fht>User Experience</div>
+      <div data-fht>and Web Development</div>
+      <div data-fht>I'm also a big fan of</div>
+      <div data-fht>photography,</div>
+      <div data-fht>distance running,</div>
+      <div data-fht>and breakfast for dinner.</div> -->
       <p>
          Howdy, my name is Michael Gyarmathy. I'm a Senior Computer Science major at Texas A&amp;M University. I have a passion for User Experience and Web Development. I'm also a big fan of photography, writing, music, distance running, and breakfast for dinner.
       </p>
@@ -70,7 +81,11 @@ layout: default
    </div>
 </section>
 
+<script type="text/javascript" src="js/fitter-happier-text.js"></script>
 <script>
+  var nodes = document.querySelectorAll('[data-fht]');
+  fitterHappierText(nodes, {paddingY: 2.75});
+
    $('#page-header').css('min-height',window.innerHeight + 'px');
 
    $(document).ready(function() {
