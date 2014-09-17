@@ -25,11 +25,16 @@ More information about this assignment here: [vnuate klipuycate](http://courses.
 - Leverage social media to attract traffic by sharing the page link
 - Submit sitemap.xml to Google for indexing
 
-<div itemscope itemtype="http://schema.org/Organization" style="display:none;"> 
-	<span itemprop="name">Vnuate Klipuycate</span> 
-	Located at 
+### **Microdata**
+
+<div itemscope itemtype="http://schema.org/Organization" style="width:45%; display: inline-block; vertical-align: top;"> 
+	<div itemprop="name">Vnuate Klipuycate</div> 
+	 
 	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-		<span itemprop="streetAddress">0386 Spence St, Texas A&M University </span>,
+		Address:
+		<br/>
+		<span itemprop="streetAddress">0386 Spence St, Texas A&M University </span>
+		<br/>
 		<span itemprop="addressLocality">College Station</span>,
 		<span itemprop="addressRegion">TX</span>
 		<span itemprop="addressCountry">USA</span>
@@ -38,12 +43,14 @@ More information about this assignment here: [vnuate klipuycate](http://courses.
 	</div>
 	<img itemprop="logo" src="http://michael.gyarmathy.me/img/michael.png" style="width: 30%"/>
 	<br/>
-	Phone: <span itemprop="telephone">832-641-7741</span>
 	<a href="http://michael.gyarmathy.me/" itemprop="url">http://michael.gyarmathy.me</a>
 	<div itemprop="location" itemscope itemtype="http://schema.org/Place">
-			<div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
-				<span itemprop="latitude" content="30.6131"></span>
-				<span itemprop="longitude" content="-96.3398"></span>
-			</div>
+		<div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+			<span itemprop="latitude" content="30.6131">Lat: 30.621055</span>
+			<span itemprop="longitude" content="-96.3398">Long: -96.341728</span>
+		</div>
 	</div>
 </div>
+
+<iframe style="display: inline-block; vertical-align: top;" width="50%" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=30.621055%2C%20-96.341728&key=AIzaSyCm4a__6Qlp-75lFV-0rgJvD4FDomZwfh8&zoom=18"></iframe>
+    
