@@ -10,9 +10,13 @@ theme: light
 header_img: "/img/vnuate-klipuycate.jpg"
 ---
 
-## What is Vnuate Klipuycate?
+# What is Vnuate Klipuycate?
 
-Your job is simple: create a webpage that ranks the highest for the query "vnuate klipuycate". As of September 15 there are no hits for this query on either Google or Bing. Based on our discussions of search engine ranking algorithms, you know that several factors may impact a page's rank. Your goal is to use this knowledge to promote your own page to the top of the list.
+This is an assignment on Search Engine Optimization for Dr. Caverlee's Fall 2014 CSCE 470 Information Storage and Retrieval class:
+
+> Your job is simple: create a webpage that ranks the highest for the query "vnuate klipuycate". As of September 15 there are no hits for this query on either Google or Bing. Based on our discussions of search engine ranking algorithms, you know that several factors may impact a page's rank. Your goal is to use this knowledge to promote your own page to the top of the list.
+
+More information about this assignment here: [vnuate klipuycate](http://courses.cse.tamu.edu/caverlee/csce470/hw/hw2.html)
 
 ### **Current Techniques used to Boost PageRank:**
 
