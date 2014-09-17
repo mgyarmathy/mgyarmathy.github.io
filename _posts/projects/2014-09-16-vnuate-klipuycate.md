@@ -18,10 +18,12 @@ This is an assignment on Search Engine Optimization for Dr. Caverlee's Fall 2014
 
 More information about this assignment here: [vnuate klipuycate](http://courses.cse.tamu.edu/caverlee/csce470/hw/hw2.html)
 
-### **Current Techniques used to Boost PageRank:**
+### **Current Strategies used to Boost PageRank:**
 
 - Add keyword and description meta tags
 - Use schema.org microdata to list Vnuate Klipuycate as a Business/Organization
+- Leverage social media to attract traffic by sharing the page link
+- Submit sitemap.xml to Google for indexing
 
 <div itemscope itemtype="http://schema.org/Organization" style="display:none;"> 
 	<span itemprop="name">Vnuate Klipuycate</span> 
