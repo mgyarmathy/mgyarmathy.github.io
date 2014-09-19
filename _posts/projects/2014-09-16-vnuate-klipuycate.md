@@ -24,6 +24,7 @@ More information about this assignment here: [vnuate klipuycate](http://courses.
 - Use schema.org microdata to list Vnuate Klipuycate as a Business/Organization
 - Leverage social media to attract traffic by sharing the page link
 - Submit sitemap.xml to Google for indexing
+- Partner with other students by linking to their sites
 
 ### **Microdata**
 
@@ -54,3 +55,7 @@ More information about this assignment here: [vnuate klipuycate](http://courses.
 
 <iframe style="display: inline-block; vertical-align: top;" width="50%" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=30.621055%2C%20-96.341728&key=AIzaSyCm4a__6Qlp-75lFV-0rgJvD4FDomZwfh8&zoom=18"></iframe>
     
+
+### **Partners**
+
+- Jess Yarbrough: [vnuateklipuycate.com](http://www.vnuateklipuycate.com)
