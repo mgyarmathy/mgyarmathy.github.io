@@ -381,14 +381,18 @@ $margin:;
   max-width: 768px !important; }
   .double-column .column {
     vertical-align: top;
-    margin: 0 auto;
-    padding: 0 2em;
-    width: 49%;
+    margin: 0;
+    padding: 0;
+    width: 45%;
     display: inline-block;
     max-width: 384px !important; }
+    .double-column .column:nth-of-type(2) {
+      float: right; }
     @media screen and (min-width: 100px) and (max-width: 479px) {
       .double-column .column {
-        width: 100%; } }
+        width: 100%;
+        padding: 0;
+        float: none !important; } }
   .double-column.wide {
     max-width: 900px !important; }
     .double-column.wide .column {
@@ -402,13 +406,13 @@ $margin:;
 h1, .h1, h2, .h2 {
   font-weight: 600; }
 
-h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h3, .h3, h4, .h4, .post-thumbnail--title, h5, .h5, h6, .h6 {
   font-weight: 400; }
 
 .bold {
   font-weight: 600; }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .h4, .post-thumbnail--title, .h5, .h6 {
   margin-bottom: .25em; }
 
 h1, .h1 {
@@ -426,7 +430,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 32px; }
 
-h4, .h4 {
+h4, .h4, .post-thumbnail--title {
   font-size: 24px;
   font-weight: 900; }
 
@@ -936,6 +940,25 @@ code {
   @media screen and (min-width: 100px) and (max-width: 479px) {
     code {
       padding: 1em 0.2em; } }
+
+.post-thumbnail {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 2em;
+  padding: 1.5em 0;
+  height: 125px; }
+
+.post-thumbnail--title {
+  display: inline-block;
+  margin-left: 5%;
+  background: #fff;
+  padding: 1.5%;
+  max-width: 80%;
+  line-height: 95%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-wrap: break-word; }
 
 * {
   -webkit-tap-highlight-color: transparent; }

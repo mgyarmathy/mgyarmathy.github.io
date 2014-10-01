@@ -17,44 +17,49 @@
    ========================================================================== */
 
 .single-column {
-  margin:0 auto;
-  padding:1em;
-  width:100%;
-  max-width:768px!important;
+  margin: 0 auto;
+  padding: 1em;
+  width: 100%;
+  max-width: 768px!important;
 
   @include breakpoint(one-hand){
     width: 100%;
   }
 
   &.wide {
-    max-width:900px!important;
+    max-width: 900px!important;
   }
 }
 
 .double-column {
-  margin:0 auto;
-  padding:1em;
-  width:100%;
-  max-width:768px!important;
+  margin: 0 auto;
+  padding: 1em;
+  width: 100%;
+  max-width: 768px!important;
 
   .column {
     vertical-align: top;
-    margin:0 auto;
-    padding: 0 2em;
-    width: 49%;
+    margin:0;
+    padding: 0;
+    width: 45%;
     display: inline-block;
     max-width: (768px/2) !important;
+
+    &:nth-of-type(2) {
+      float: right;
+    }
     @include breakpoint(one-hand){
         width: 100%;
+        padding: 0;
+        float: none !important;
     }
   }
 
   &.wide {
-    max-width:900px!important;
+    max-width: 900px!important;
 
     .column {
       max-width:(900px/2)!important;
     }
   }
 }
-

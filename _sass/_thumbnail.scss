@@ -1,0 +1,21 @@
+.post-thumbnail {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-bottom: 2em;
+	padding: 1.5em 0;
+	height: 125px;
+}
+
+.post-thumbnail--title {
+	@extend .h4;
+	display: inline-block;
+	margin-left: 5%;
+	background: #fff;
+	padding: 1.5%;
+	max-width: 80%;
+	line-height: 95%;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	word-wrap: break-word;
+}
