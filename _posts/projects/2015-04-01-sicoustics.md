@@ -30,7 +30,7 @@ The site also was in need of a few visual style improvements to make the site's 
 
 ![](/img/sicousticsiphone.png){: .small.right} The redesign of Sicoustics.com turned out wonderfully. I was especially pleased with the new Build An Event form component. To make this component more intuitive, I used [KnockoutJS](http://knockoutjs.com/) to take the user's form inputs and generate an automatic message for the contact form. This, in practice, removes a barrier in the lead generation process and adds to the overall user experience.
 
-The site redesign added a lot of value to Sicoustics' online presence. The visual style improvements improved the company's credibility, which helps attract new customers, and by streamlining the lead generation process, Sicoustics expects to see an increase in their conversion rates.
+The site redesign has added a lot of value to Sicoustics' online presence. The visual style improvements improved the company's credibility, which helps attract new customers, and by streamlining the lead generation process, Sicoustics expects to see an increase in their conversion rates.
 
 ![](/img/sicousticsdevices.png){: .large} <span class="caption">responsive design of <a href="http://sicoustics.com">http://sicoustics.com</a></span>
 
