@@ -59,7 +59,7 @@ scales appropriately to the device it is being viewed on.
 
 ## The Result 
 
-![](/img/getloudforlanzdevices.jpg){: .large} <span class="caption">Texas A&amp;M BYX Island Party 2014 site redesign - <a href="http://getloudforlanz.com">http://getloudforlanz.com</a></span>
+![](/img/getloudforlanzdevices.jpg){: .large} <span class="caption">Get Loud for Lanz site design - <a href="http://getloudforlanz.com">http://getloudforlanz.com</a></span>
 
 ![](/img/getloudforlanziphone.png){: .small.right} After the ballots were tallied, **Steven 
 won the election**, the first non-reg Yell Leader candidate to win in several years. The site 
