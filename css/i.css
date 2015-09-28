@@ -115,7 +115,8 @@ dfn {
  */
 hr {
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 /**
@@ -256,8 +257,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -277,7 +277,9 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -455,6 +457,7 @@ p {
   @media screen and (min-width: 100px) and (max-width: 479px) {
     .post h1 {
       font-size: 32px; } }
+
 .post footer {
   color: #eee; }
 
@@ -514,11 +517,14 @@ date {
   line-height: 1.618;
   font-size: 24px;
   margin-bottom: 1em; }
+
 .post dt {
   font-weight: bold; }
+
 .post dd {
   margin-bottom: .5em;
   color: #777; }
+
 .post ul {
   list-style-type: disc;
   margin-left: 1.5em; }
@@ -526,10 +532,17 @@ date {
 a {
   text-decoration: none; }
 
-.link-hover-blue:hover, .large-list .large-list--link:hover, .site-nav--link:hover, .link-hover-blue:focus, .large-list .large-list--link:focus, .site-nav--link:focus {
+.link-hover-blue:hover,
+.large-list .large-list--link:hover,
+.site-nav--link:hover,
+.link-hover-blue:focus, .large-list .large-list--link:focus, .site-nav--link:focus {
   color: #003399; }
-  .link-hover-blue:hover .meta, .large-list .large-list--link:hover .meta, .site-nav--link:hover .meta, .link-hover-blue:focus .meta, .large-list .large-list--link:focus .meta, .site-nav--link:focus .meta {
+  .link-hover-blue:hover .meta,
+  .large-list .large-list--link:hover .meta,
+  .site-nav--link:hover .meta,
+  .link-hover-blue:focus .meta, .large-list .large-list--link:focus .meta, .site-nav--link:focus .meta {
     color: #003399; }
+
 .link-hover-blue:active, .large-list .large-list--link:active, .site-nav--link:active {
   color: #3366CC; }
 
@@ -577,9 +590,13 @@ a {
 
 .light {
   color: #bbb; }
-  .light:hover, .light:focus, .light:active {
+  .light:hover,
+  .light:focus,
+  .light:active {
     color: #fff; }
-    .light:hover .meta, .light:focus .meta, .light:active .meta {
+    .light:hover .meta,
+    .light:focus .meta,
+    .light:active .meta {
       color: #fff; }
 
 .row {
@@ -928,10 +945,9 @@ img {
 code {
   background: #222;
   -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   display: block;
-  font-family: Consolas,  "Andale Mono WT",  "Andale Mono",  "Lucida Console",  "Lucida Sans Typewriter",  "DejaVu Sans Mono",  "Bitstream Vera Sans Mono",  "Liberation Mono",  "Nimbus Mono L",  Monaco,  "Courier New",  Courier,  monospace;
+  font-family: Consolas,      "Andale Mono WT",      "Andale Mono",      "Lucida Console",      "Lucida Sans Typewriter",      "DejaVu Sans Mono",      "Bitstream Vera Sans Mono",      "Liberation Mono",      "Nimbus Mono L",      Monaco,      "Courier New",      Courier,      monospace;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.1em;
@@ -966,6 +982,10 @@ code {
 
 body {
   background-image: url("/img/crossword.png"); }
+
+::-moz-selection {
+  background: #eee;
+  /* Safari */ }
 
 ::selection {
   background: #eee;
@@ -1044,27 +1064,16 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-@-moz-keyframes pulse {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-o-keyframes pulse {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+
 @keyframes pulse {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
 .pulse {
   /*animation*/
   -webkit-animation: pulse 1.5s linear infinite alternate;
-  -moz-animation: pulse 1.5s linear infinite alternate;
-  -ms-animation: pulse 1.5s linear infinite alternate;
-  -o-animation: pulse 1.5s linear infinite alternate;
   animation: pulse 1.5s linear infinite alternate; }
 
 .header-scroll .fa.light {
@@ -1075,5 +1084,3 @@ body {
   content: "";
   display: table;
   clear: both; }
-
-/*# sourceMappingURL=i.css.map */
