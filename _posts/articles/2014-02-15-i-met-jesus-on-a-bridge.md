@@ -1,5 +1,5 @@
 ---
-layout: full_bleed_header
+layout: post
 title: "I Met Jesus on a Bridge"
 author: Michael Gyarmathy
 category: articles

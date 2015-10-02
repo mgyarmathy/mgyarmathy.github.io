@@ -1,0 +1,40 @@
+
+{% include _head.html %}
+<body ontouchstart="">
+  {% include _navigation.html %}
+  <div class="container">
+    <div class="row">
+      <div class="nine offset-by-negative-one columns">
+        <img class="mt-0" src="{{page.header_img}}">
+      </div>
+      <div class="four columns mt-1">
+        <h2>{{page.title}}</h2>
+        <h3><time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time></h3>
+        <h3>By: {{page.author}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <article class="mt-2 post">
+      <!-- This is where post content lives -->
+      <div class="row">
+        <div class="ten offset-by-one columns">
+          {{content}}
+        </div>
+      </div>
+      <!-- end of post content -->
+      <footer class="mt-2">
+        {% if page.author %}
+        <p class="meta author">
+        <time  class="meta" datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time><br />
+        By: <a href="" rel="author">{{page.author}}</a></p>
+        {% endif %}
+      </footer>
+    </article>
+  </div>
+  {% include _disqus.html %}
+  {% include _related_posts.html %}
+  {% include _footer.html %}
+  {% include _google_analytics.html %}
+</body>
+</html>

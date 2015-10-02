@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: post
 title: "BYX Island Party 2014"
 author: Michael Gyarmathy
 category: projects

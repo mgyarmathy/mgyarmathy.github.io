@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: post
 title: "Aggies Commit"
 author: Michael Gyarmathy
 category: projects

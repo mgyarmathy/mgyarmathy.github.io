@@ -2,33 +2,78 @@
 layout: default
 ---
 
-<header id="page-header" style="background:#eee url(/img/0005-b.jpg) no-repeat center center; background-size:cover;" class="header-full-bleed row">
-  <div class="h1 full-bleed-title">Michael Gyarmathy</div>
-  <br/>
-  <div class="h2 full-bleed-subtitle">
-    <i class="fa fa-angle-double-right"></i> Student at Texas A&amp;M University<br/>
-    <i class="fa fa-angle-double-right"></i> Freelance Web Developer<br/>
-    <i class="fa fa-angle-double-right"></i> Aspiring Writer<br/><br/>
-    <p class="meta">Connect with me via</p>
-    <a class="link-hover-blue bold" href="https://github.com/mgyarmathy">GitHub </a>|
-    <a class="link-hover-blue bold" href="https://twitter.com/mgyarmathy_"> Twitter </a>|
-    <a class="link-hover-blue bold" href="mailto:michael@gyarmathy.me">Email</a>
-  </div>
-  <br/>
-</header>
-<section id="about">
-  <div class="single-column mt-2">
-    <div style="text-align:center;">
-      <img style="width:33%;" src="/img/michael.png"/>
+<section id="about" class="container">
+  <div class="row">
+    <div class="nine offset-by-negative-one columns">
+      <img class="mt-0" src="/img/naenae.png">
     </div>
-    <p>
-      Howdy, my name is Michael Gyarmathy. I'm a Senior Computer Science major at Texas A&amp;M University. I have a passion for User Experience and Web Development. I'm also a big fan of photography, writing, music, distance running, and breakfast for dinner.
-    </p>
+    <div class="four columns mt-2 mt-0-mobile">
+      <div class="bio">
+        <p>
+          Howdy, I'm <strong>Michael</strong> -- that's me in the middle.
+        </p>
+        <p>
+            I'm a <strong>Consultant</strong> at <a href="https://www.credera.com">Credera</a> in Dallas, TX. I also do <strong>Freelance Web Development</strong> through <a href="#">Focus Fox</a>, a company I recently started.
+        </p>
+        <p>
+          Apart from that, I really enjoy live music, distance running, and breakfast for dinner.
+        </p>
+        <p>Let's get in touch:
+          <br/>
+          <a href="https://twitter.com/mgyarmathy_">Twitter</a>
+          <span class="pre"> | </span>
+          <a href="mailto:michael@gyarmathy.me">Email</a>
+          <span class="pre"> | </span>
+          <a href="https://github.com/mgyarmathy">GitHub</a>
+        </p>
+      </div>
+    </div>
   </div>
+  <div class="row hide-mobile">
+    <div class="twelve columns">
+      <h1 style="font-size: 108px; margin: -10px 0 -5px;">Michael Gyarmathy</h1>
+      <p class="pre rt">Web Developer  |  Aspiring Writer  |  Photographer</p>
+    </div>
+  </div>
+  <hr class="mt-0"/>
 </section>
-<section id="recent-work">
-  <div class="double-column cf">
-    <div class="column">
+<section id="recent-work" class="container">
+  <div class="row cf">
+    <div class="one-half column">
+      <div class="h2">Articles</div>
+      <div class="articles-list">
+      {% for post in site.categories.articles limit:3 %}
+        {% if post.header_img %}
+        <a href="{{post.url}}">
+          <div style="background-image: url({{post.header_img}})" class="post-thumbnail">
+            <div class="post-thumbnail--title" >{{post.title}}</div>
+          </div>
+        </a>
+        {% endif %}
+      {% endfor %}
+      </div>
+      <div class="rt">
+        <a href="/articles">All Articles <i class="fa fa-angle-double-right"></i></a>
+      </div>
+    </div>
+    <div class="one-half column">
+      <div class="h2">Photographs</div>
+      <div class="photographs-list">
+        {% for post in site.categories.photographs limit:3 %}
+        {% if post.header_img %}
+        <a href="{{post.url}}">
+          <div style="background-image: url({{post.header_img}})" class="post-thumbnail">
+            <div class="post-thumbnail--title" >{{post.title}}</div>
+          </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="rt">
+        <a href="/photographs">All Photographs <i class="fa fa-angle-double-right"></i></a>
+      </div>
+    </div>
+    <!-- <div class="one-half column">
       <div class="h2">Projects</div>
       <div class="projects-list">
       {% for post in site.categories.projects limit:3 %}
@@ -42,58 +87,9 @@ layout: default
       {% endfor %}
       </div>
       <div style="text-align:right;">
-        <a class="highlight" href="/projects">All Projects <i class="fa fa-angle-double-right highlight"></i></a>
+        <a class="no-border" href="/projects">All Projects <i class="fa fa-angle-double-right"></i></a>
       </div>
-    </div>
-    <div class="column">
-      <div class="h2">Articles</div>
-      <div class="articles-list">
-      {% for post in site.categories.articles limit:3 %}
-        {% if post.header_img %}
-        <a href="{{post.url}}">
-          <div style="background-image: url({{post.header_img}})" class="post-thumbnail">
-            <div class="post-thumbnail--title" >{{post.title}}</div>
-          </div>
-        </a>
-        {% endif %}
-      {% endfor %}
-      </div>
-      <div style="text-align:right;">
-        <a class="highlight" href="/articles">All Articles <i class="fa fa-angle-double-right highlight"></i></a>
-      </div>
-    </div>
+    </div> -->
   </div>
+  <hr>
 </section>
-<section id="photographs">
-  <div class="single-column">
-    <div class="h2">Photographs</div>
-    <div class="photographs-list">
-      {% for post in site.categories.photographs %}
-      {% if post.header_img %}
-      <a href="{{post.url}}">
-        <div style="background-image: url({{post.header_img}})" class="post-thumbnail">
-          <div class="post-thumbnail--title" >{{post.title}}</div>
-        </div>
-      </a>
-      {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<script>
-  $('#page-header').css('min-height',window.innerHeight + 'px');
-
-  $(document).ready(function() {
-    if (window.innerHeight < $('#page-header').height()) {
-     $('.header-scroll').hide();
-   }
-
-   $('.header-scroll').click(function() {
-     $('html, body').animate({
-       scrollTop: $('#about').offset().top
-     }, 1250);
-     return false;
-   });
- });
-  </script>

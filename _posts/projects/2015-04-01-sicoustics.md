@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: post
 title: "Sicoustics"
 author: Michael Gyarmathy
 category: projects

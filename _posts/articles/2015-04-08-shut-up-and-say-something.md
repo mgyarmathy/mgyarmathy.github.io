@@ -1,5 +1,5 @@
 ---
-layout: full_bleed_header
+layout: post
 title: "Shut Up and Say Something"
 author: Michael Gyarmathy
 category: articles

@@ -8,9 +8,6 @@
         <p><time datetime="{{page.date}}">{{page.date | date: "%B %d, %Y"}}</time></p>
         <p>{{page.project_type}}</p>
       </div>
-      <div class="header-scroll">
-        <i class="fa fa-angle-double-down fa-4x pulse"></i>
-      </div>
     </header>
     <div class="single-column">
   <article class="mt-2 post">
@@ -43,27 +40,5 @@
   {% include _related_posts.html %}
   {% include _footer.html %}
   {% include _google_analytics.html %}
-  <script>
-    $('#page-header').css('min-height',window.innerHeight + 'px');
-
-    $(document).ready(function() {
-      if (window.innerHeight < $('#page-header').height()) {
-         $('.header-scroll').hide();
-      }
-
-      $('.header-scroll').click(function() {
-         $('html, body').animate({
-             scrollTop: $('.single-column').offset().top
-         }, 500);
-       return false;
-      });
-   });
-  </script>
-
-  {% if page.theme == 'light' %}
-  <script>
-      $('.site-nav--link, .header-scroll .fa').addClass('light');
-  </script>
-  {% endif %}
 </body>
 </html>

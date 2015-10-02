@@ -1,5 +1,5 @@
 ---
-layout: full_bleed_header
+layout: post
 title: "Surrender Is Better Than Speculation"
 author: Michael Gyarmathy
 category: articles

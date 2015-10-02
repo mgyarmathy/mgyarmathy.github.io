@@ -1,5 +1,5 @@
 ---
-layout: full_bleed_header
+layout: post
 title: "From Camp To Corporate"
 author: Michael Gyarmathy
 category: articles

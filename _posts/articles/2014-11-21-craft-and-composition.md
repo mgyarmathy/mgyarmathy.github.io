@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: post
 title: "Craft & Composition"
 author: Michael Gyarmathy
 category: projects

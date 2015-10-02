@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: post
 title: "Get Loud For Lanz"
 author: Michael Gyarmathy
 category: projects

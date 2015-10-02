@@ -1,5 +1,5 @@
 ---
-layout: full_bleed_header
+layout: post
 title: "He Set His Face Like Flint"
 author: Michael Gyarmathy
 category: articles

@@ -1,5 +1,5 @@
 ---
-layout: full_bleed_header
+layout: post
 title: "Failing Is Not Just For Failures"
 author: Michael Gyarmathy
 category: articles

@@ -1,20 +1,18 @@
 // Include all the partials you want compiled into i.css
 
 @import "normalize";
+@import "skeleton";
 
-@import "vars";
-@import "fonts";
 @import "colors";
-@import "grid";
 @import "type";
-@import "skins";
-@import "lists";
-@import "buttons";
+@import "utilities";
+// @import "lists";
+// @import "buttons";
 @import "links";
 @import "nav";
-@import "spacing";
 @import "images";
-@import "syntax";
-@import "code";
+// @import "syntax";
+// @import "code";
+@import "post";
 @import "thumbnail";
 @import "styles";
