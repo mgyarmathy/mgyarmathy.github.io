@@ -49,21 +49,25 @@ h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
 h1,.h1 {
   font-size:$type-1;
 
-  // @include breakpoint(one-hand) {
-  //   font-size:$type-2;
-  // }
+  @include breakpoint(one-hand) {
+    font-size:$type-2;
+  }
 }
 
 h2,.h2 {
   font-size:$type-2;
 
-  // @include breakpoint(one-hand) {
-  //   font-size:$type-3;
-  // }
+  @include breakpoint(one-hand) {
+    font-size:$type-3;
+  }
 }
 
 h3,.h3 {
   font-size:$type-3;
+
+  @include breakpoint(one-hand) {
+      font-size:$type-4;
+  }
 }
 
 h4,.h4 {
@@ -93,24 +97,6 @@ p {
   font-size:$type-3;
 }
 
-.post {
-   h1 {
-    font-size:$type-2;
-    // @include breakpoint(one-hand) {
-    //     font-size:$type-3;
-    // }
-  }
-  footer {
-    color:$grey-light;
-  }
-}
-
-.h1-r {
-  // @include breakpoint(one-hand) {
-  //   font-size:$type-2;
-  // }
-}
-
 .meta {
   font-size:$type-5;
 }
@@ -119,19 +105,25 @@ blockquote {
   padding:1em 0 1.75em 0;
   font-style:italic;
 
-  p, .footer, .footer a{
-  }
   p {
     font-size:$type-3;
   }
-  .footer,.footer a {
-    display:block;
-    font-size:$type-4;
-    line-height:2;
-    text-decoration:none;
-    color:#999 !important;
-    text-align:right;
+
+  @include breakpoint(one-hand) {
+    padding: 0.5em 0;
+    margin: 1em 2em;
+    p { 
+      font-size:$type-4;
+    }
   }
+  // .footer,.footer a {
+  //   display:block;
+  //   font-size:$type-4;
+  //   line-height:2;
+  //   text-decoration:none;
+  //   color:#999 !important;
+  //   text-align:right;
+  // }
 }
 
 strong {
