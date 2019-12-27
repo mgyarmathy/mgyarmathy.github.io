@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>
-    {% if page.title %} {{ page.title }} | {% endif %} {{site.author}}
-  </title>
+  <title>{% if page.title %} {{ page.title }} | {% endif %}{{site.author}}</title>
+  {% if page.title %}
+  <meta property="og:title" content="{{page.title}} | {{site.author}}"/>
+  {% else %}
+  <meta property="og:title" content="{{site.author}}"/>
+  {% endif %}
   <script type="text/javascript">
     var host = "michael.gyarmathy.me";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
@@ -13,8 +16,10 @@
   <meta name="author" content="{{site.author}}">
   {% if page.excerpt %}
   <meta name="description" content="{{page.excerpt | strip_html}}">
+  <meta property="og:description" content="{{page.excerpt | strip_html}}"/>
   {% else %}
   <meta name="description" content="{{site.description}}">
+  <meta property="og:description" content="{{site.description}}"/>
   {% endif %}
   {% if page.keywords %}
   <meta name="keywords" content="{{page.keywords}}">
@@ -24,7 +29,16 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/i.css">
   {% if page.header_img %}
-  <link rel="image_src" href="//mgyarmathy.github.io{{page.header_img}}"/>
+  <link rel="image_src" href="{{page.header_img}}"/>
   {% endif %}
-  <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+  <link rel="canonical" href="{{site.url}}{{page.url}}" />
+  <meta property="og:url" content="{{site.url}}{{page.url}}" />
+
+  {% if page.header_img %}
+  <meta property="og:image" content="{{site.url}}{{page.header_img}}" />
+  {% else %}
+  <meta property="og:image" content="{{site.url}}/img/family_cropped.jpg" />
+  {% endif %}
+
+
 </head>
