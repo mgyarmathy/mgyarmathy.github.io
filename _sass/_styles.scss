@@ -17,6 +17,19 @@
     font-size: 20px;
 }
 
+@media (#{$bp-larger-than-mobile}) {
+  .bio {
+    margin-top: 15vh;
+  }
+}
+
+@media (#{$bp-larger-than-mobile}) {
+  .bio-img {
+    height: 67vh;
+    width: auto;
+  }
+}
+
 // .header-full-bleed {
 //   margin:0;
 //   background-size:cover;
