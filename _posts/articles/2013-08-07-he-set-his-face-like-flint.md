@@ -34,13 +34,13 @@ Flint is a very hard type of sedimentary rock. When struck against steel, a flin
 
 When I learned the purpose of flint, I began to realize what these six words mean:
 
-##It means having the resolve to achieve the Lord’s purposes.
+## It means having the resolve to achieve the Lord’s purposes.
 
 Jesus had countless opportunities to abandon the task He was sent to complete, yet he was unwavering with every step He took.When He told his disciples of the suffering He was going to endure in Jerusalem, they pleaded with him to choose an easier path, but He did not listen. Jesus was steadfast in achieving His purpose until He said, *“It is finished”*.
 
 The Lord brought me to Austin this summer for His purposes. It is no accident that I ended up at Blackbaud interning with the Web Development & Services Team. My heart broke when I knew I had to tell Cole and Sean and Trish that I would not be working at T Bar M again this summer. Returning to camp would have meant choosing the easier, more familiar path. Instead, I took the plunge into the corporate world, away from the safe haven of an incredible camp community. It was not an easy choice to make. Working alongside nonbelievers on a daily basis is often discouraging. As I finish out these last two weeks of work, I’m praying that God would give me the determination to finish strong and not waver from the reasons as to why He brought me here.
 
-##It means often following a less glamorous path.
+## It means often following a less glamorous path.
 
 Jesus forfeited all of His glory and honor as He dwelt among men. 2 Peter says that He *“made himself nothing, taking the very nature of a servant, being made in human likeness”*. The Son of Man had no place to lay His head. He was persecuted, but turned the other cheek. In the face of temptation, He resisted.
 
