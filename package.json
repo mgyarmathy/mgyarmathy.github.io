@@ -10,8 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.9.6",
-    "grunt": "~0.4.2",
-    "gulp": "^3.9.0",
+    "grunt": "~1.5.3",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.0.2",
     "gulp-sass": "^2.0.4"
   }
