@@ -9,7 +9,7 @@
   "author": "@mgyarmathy",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.9.6",
+    "browser-sync": "^2.29.1",
     "grunt": "~0.4.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
