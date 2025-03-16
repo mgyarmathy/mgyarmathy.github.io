@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %} {{ page.title }} | {% endif %}{{site.author}}</title>
+  {% if page.title %}
+  <meta property="og:title" content="{{page.title}} | {{site.author}}"/>
+  {% else %}
+  <meta property="og:title" content="{{site.author}}"/>
+  {% endif %}
+  <script type="text/javascript">
+    var host = "michael.gyarmathy.me";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
+  <meta name="author" content="{{site.author}}">
+  {% if page.excerpt %}
+  <meta name="description" content="{{page.excerpt | strip_html}}">
+  <meta property="og:description" content="{{page.excerpt | strip_html}}"/>
+  {% else %}
+  <meta name="description" content="{{site.description}}">
+  <meta property="og:description" content="{{site.description}}"/>
+  {% endif %}
+  {% if page.keywords %}
+  <meta name="keywords" content="{{page.keywords}}">
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/i.css">
+  {% if page.header_img %}
+  <link rel="image_src" href="{{page.header_img}}"/>
+  {% endif %}
+  <link rel="canonical" href="{{site.url}}{{page.url}}" />
+  <meta property="og:url" content="{{site.url}}{{page.url}}" />
+
+  {% if page.header_img %}
+  <meta property="og:image" content="{{site.url}}{{page.header_img}}" />
+  {% else %}
+  <meta property="og:image" content="https://michael.gyarmathy.me/img/family_home.jpg" />
+  <meta property="og:image:url" content="http://michael.gyarmathy.me/img/family_home.jpg" />
+  <meta property="og:image:secure_url" content="https://michael.gyarmathy.me/img/family_home.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1094" />
+  <meta property="og:image:height" content="1634" />
+  {% endif %}
+
+
+</head>
